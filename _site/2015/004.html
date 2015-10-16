@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="{{page.meta}}">
+<meta name="keywords" content="{{page.keyword}}">
+<title>CVMLDM - Rearrangement of Attributes in Information Table and its Application for Missing Data Imputation</title>
+
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
+
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!-- Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>International Journal on Computer Vision, Machine Learning, and Data Mining (CVMLDM)</h1>
+    <!-- <p class="body">ISSN:</p> -->
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+    </div>
+  </div>
+  </div>
+
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
+
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">
+      Volume 1 - Year 2015 - Pages 29-38<br>
+      DOI: TBD</p>
+    </div>
+
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/004.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
+
+    <h3 class="center">Rearrangement of Attributes in Information Table and its Application for
+Missing Data Imputation</h3>
+
+    <p class="body-bold center">Gongzhu Hu<sup>1</sup>, Feng Gao<sup>2</sup></p>
+    <p class="body center"><sup>1</sup>Department of Computer Science, Central Michigan University<br>
+Mount Pleasant, Michigan, USA <br>
+hu1g@cmich.edu<br>
+<sup>2</sup>Science School, Qingdao Technological University<br>
+Qingdao, China<br>
+gaofeng99@sina.com</p>
+
+    <p class="body"><b>Abstract</b> - <i>In rough set theory, data is usually stored in an information
+table with attributes divided into condition attributes and
+decision attribute. Due to the uncertainty in the data, the data set
+is represented by formal approximations and “condition-decision”
+rules can be deducted from the approximations based on the assumption
+that some sort of causal relations exist between different
+attributes. In this paper, we propose an attribute rearrangement
+approach to extract logical relations (maybe considered as causal
+relations) between different attributes in information tables. We
+introduce the notion of optimal logic attribute and optimal attribute
+logical flow based on the roughness of the rearrangements to explore
+the logical relations between attributes. This rearrangement
+approach can be used to address the missing data problem for
+most data analysis tasks. We apply the attribute rearrangement
+approach to the missing value imputation problem by rearranging
+the attributes such that the attribute with missing values becomes
+the decision attribute so that we can decide how to deal with the
+missing value based on the logical relations extracted from the
+rearrangement. In the case that the rearrangement is an optimal
+attribute logical flow, we impute the missing data by the deducted
+decision rules, otherwise the missing data is imputed by other
+method. We illustrated this approach with a few simple examples.</i>
+
+    <p class="body"><b><i>Keywords:</i></b> Rough set, rearrangement of attributes, roughness of
+rearrangement, optimal attribute logical flow, missing data imputation.</p>
+
+    <p class="body">© Copyright 2015 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+    <p class="body">Date Received: 2014-09-07<br />
+    Date Accepted: 2015-06-11<br>
+    Date Published: 2015-09-30</p>
+
+  <div class="border"></div>
+
+  <div class="indent">
+  
+  <h4>1. Introduction</h4>
+
+<p class="body">In rough set theory [21, 23, 24], the information of a real world application is normally expressed as an information table that represents the data for the application. A simple example is given in Table 1 that shows the possible results of a physician’s diagnosis of six patients.</P>
+
+<p class="body">In this table, e<SPAN class="ft14">1;e<SPAN class="ft14">2;e<SPAN class="ft14">3;e<SPAN class="ft14">4;e<SPAN class="ft14">5;e<SPAN class="ft14">6 are called <i>cases</i> (also
+called objects, records, or observations). The cases are associated with <i>attributes</i>
+that may draw values from different <i>domains</i>. The attributes of an information
+table are divided into two categories: <i>condition attributes</i> and <i>decision
+attributes</i>. An attribute in an information table is identified as decision
+attribute simply because it has a special importance or it is the one we want
+to focus our attention on. For example, <i>flu</i> is identified as the
+decision attribute in Table 1 because the physician is concerned about if the
+patients have flu or not. However, the same information table may be looked at
+from different points of view when we want to focus on different attributes. Taking
+Table 1 as an example, the physician may be concerned about the patients’
+temperature and want to find out those patients with flu having high
+temperature or normal temperature. In this case, <i>temperature</i> rather than
+<i>flu</i> should be the decision attribute. Similarly, <i>headache</i> or <i>muscle_pain</i>
+may be the decision attribute if the doctor is concerned about these attributes
+of the patients. This thought leads to a need of rearrangement of the
+attributes with each rearrangement having a different attribute as the decision
+attribute.</p>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 1. An information table.</p>
+<table>
+  <thead>
+ <tr>
+  <td>Case
+  </td>
+  <td colspan=3>
+  Condition
+  </td>
+  <td>
+  Decision
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td>
+  <i>headache</i>
+  </td>
+  <td>
+  <i>muscle_pain</i>
+  </td>
+  <td>
+  <i>temperature</i>
+  </td>
+  <td>
+  <i>flu</i>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e1
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  normal
+  </td>
+  <td>
+  no
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e2
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  high
+  </td>
+  <td>
+  yes
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e3
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  very high
+  </td>
+  <td>
+  yes
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e4
+  </td>
+  <td>
+  no
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  normal
+  </td>
+  <td>
+  no
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e5
+  </td>
+  <td>
+  no
+  </td>
+  <td>
+  no
+  </td>
+  <td>
+  high
+  </td>
+  <td>
+  no
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e6
+  </td>
+  <td>
+  no
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  very high
+  </td>
+  <td>
+  yes
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">The basic idea of using rough
+set for data analysis is for make predictions based on the available data as <i>decision
+rules</i>, in the form of , that are derived from the rough sets in the data.
+So, <i>can we make decisions on the missing values (thus the missing values are
+imputed) rather than on the original decision attributes</i>? We proposed a new
+method to answer this question. The main idea is to treat an attribute (column
+in an information table) with missing value as the decision target, and the
+original decision target is considered a regular condition attribute. The
+columns of the information table are permuted (rearranged) so that each attribute
+column with missing values has a chance to be treated as the decision target. </p>
+
+<p class="body">To use this method to deal with information table and its rearrangements, we should consider the following questions:</P>
+<ul align="justify" style="text-indent:19.85pt;">
+<li>1. Which of the rearrangements will yield rough sets and which will yield non-rough sets? How to decide?</li>
+<li>2. In what conditions all rearrangements will result in rough sets, and what are the conditions for which all rearrangements will produce non-rough sets?</li>
+<li>3. Are there logical (causal) relations between attributes? How to express such relations?</li>
+<li>4. How can we use the logical relations between attributes to make the predictions?</li>
+</ul>
+
+<p class="body">We address these questions by introducing several new concepts and a method for missing value imputation, that are the main contributions of this paper:</P>
+
+<ul>
+<li>New concepts: <i>roughness of rearrangement</i> based on the upper and lower
+approximations of rough set, <i>optimal logical attribute</i>, and <i>optimal
+logical attribute flow</i>.</li>
+<li>We propose a method to support decision making in missing data
+imputation using the attribute rearrangement based on these concepts.</li>
+</ul>
+
+<h4>2. Related Work</h4>
+<p class="body">Two major topics are related to the
+work presented in this paper: missing data imputation and rough set. For
+missing data imputation, there are enormous amount of work on ad hoc and
+statistic approaches in the literature but only a few methods were proposed
+using rough sets. So we shall first give a brief review on the general
+approaches for missing data, and then some related work that used rough set for
+solving the missing data imputation problem. For rough set, since we will
+include an introduction of rough set basics in Section 3, we shall only discuss the issue of roughness measures in this section.</p>
+
+<p class="subhead">2. 1. Missing Data Imputation</p>
+<p class="body">There are many different ways to
+handle missing data [3, 5, 11]. The simplest is to ignore missing data from
+analysis, either complete-case or available-case. In complete-case analysis,
+records with missing values are removed. This may drop a large portion of the
+sample when missing values occur in many variables. In available-case analysis,
+only those records that have no missing values in a specified set of variables
+are used. This approach may produce biased estimate if observation is not
+missing completely at random (MCAR). </p>
+
+<p class="body">Some ad hoc methods can also be
+used, such as recode all the missing values with a special common value.
+However, the spacial value may be just as good as other normal values unless
+the analysis algorithm treats it differently. For longitudinal studies, the
+Last Value Carried Forward (LVCF) approach may be used that the last observed
+value of the same subject is carried forward to replace the current missing
+value. This approach may lead to biased results, though, for example, the
+estimated parameters (e.g. mean values) may be distorted.</p>
+
+<p class="body">Statistic methods are effective
+to handle the missing data problem [17] if the missingness is at random. For
+numeric variables, replacing missing values with the column mean is a simple
+solution. The basic idea with statistic methods is to treat the missing value
+as a classification/prediction problem. For example, regression (linear and
+non-linear) is one of the most commonly used approaches where the missing
+values are <i>predicted</i> from the observed values [16]. To overcome the
+problem of bias, multiple imputation [26, 31] is often necessary. In multiple
+imputation, <i>n</i> (typically, 5 to 10) different replacement sets of values
+through imputation to generate <i>n</i> completed sets of data. The variations
+between the <i>n</i> data sets reflect the uncertainty in the imputation.
+Analysis is then conducted on the <i>n</i> compete data sets.</p>
+
+<p class="body">Some other statistic methods
+that are typical for classification and prediction tasks have also been applied
+to deal with missing data, such as spline exploration [4] that is to come up
+with a spline function as the prediction model, and Naïve Bayes [20, 25] that
+is based on the posterior probability of the predicted value based on prior
+probabilities of the observed values. These numerical and analytical methods
+can deal with numerical type missing data. However, if the data is not numeric
+or the data is not big enough to support accurate numerical interpolation, the
+attribute rearrangement method can be an option.</p>
+
+<p class="subhead">2. 2. Imputation of Missing Data using Rough Sets</p>
+
+<p class="body">Many different methods have been
+used to impute missing data, including those using rough sets. A comparative
+and experimental study of nine different approaches to missing attribute values
+was provided in [9]. These approaches are mostly ad hoc (such as ignoring
+objects with unknown attribute values, treating missing values as special
+values, replacing a missing value with all possible values in the attribute’s
+domain, etc.) or probabilistic (most common value, concept most common value,
+C4.5 decision tree, event-covering, etc.). </p>
+
+<p class="body">Rough set approaches for
+handling missing values were introduced in 1990’s [10, 12]. Grzymala-Busse
+proposed rough set approaches to deal with three types of missing values: <i>loss
+values</i>, <i>attribute-concept values</i>, and “<i>do not care</i>” <i>conditions</i>
+[7, 8].</p>
+
+<p class="body">The software toolkit Rough Set
+Exploration System (RSES) [1], developed by a team of researcher some of whom
+were involved in the original rough set theory research, uses the traditional
+approaches to deal with missing attribute values: removing objects with missing
+values, filling missing values with most common value (nominal) or the mean
+(numeric) of the attribute, treating missing value as information (null as
+regular value), and analysis using only the objects with complete data for
+reduct/rule calculation.</p>
+
+<p class="body">In [13], the indiscernibility
+relation in rough set was enhanced to include individual treatment of missing
+values using two different approaches based on the assumption that not all
+missing values are semantically equal. An algorithm was provided in this study
+to create sub-optimal flexible indiscernibility relations for information with
+missing values.</p>
+
+<p class="body">A rough clustering approach
+dealing with missing data was proposed in [14]. In this approach, traditional
+clustering techniques (such as K-means) was combined with soft computing (fuzzy
+and rough) to deal with the uncertainty in the data. It was reported in the
+study that rough K-means and fuzzy-rough K-means clustering algorithms yielded
+better performance.</p>
+
+<p class="body">Characteristic relation was
+introduced in [19, 18] to describe the relations of the objects with missing
+values. Lower and upper approximations were defined in several different ways
+based on the characteristic relations. The study included experiments with
+several real data sets from the South African antenatal sero-prevalence survey
+of 2001 with HIV positive as the decision attribute. It claimed that the
+missing value imputation approach resulted in 99% accuracy of the HIV
+prediction.</p>
+
+<p class="body">An artificial neural network
+(ANN) approach was presented in [29] that used rough set theory (RST) to reduce
+the dimensionality of the attributes through its reduct. Comparisons of the
+ANNRST (combination of ANN and RST) approach with other methods were given
+showing that the prediction accuracy using ANNRST was about the same as pure
+ANN without dimensionality reduction, and outperformed k-NN.</p>
+
+<p class="body">The above is a brief summary of
+previous work on missing data imputation using rough set. All of these methods
+kept the structure of the data (i.e. information table) with the original
+decision attribute unchanged. The method proposed in this paper differs from
+these approaches in a major way: the attribute with missing values is swapped
+with the original decision attribute so that the missing value can be
+“predicted” using the rules derived from rough set.</p>
+
+<p class="subhead">2. 3. Roughness Measures</p>
+
+<p class="body">The basic premise in rough set
+theory is that a set of data elements (cases) can be formally approximated by a
+pair of subsets based on the indiscernibility relation. The pair of subsets are
+the upper and lower approximations of the given data set. To evaluate the goodness
+of the approximation, Pawlak introduced the measures of accuracy and roughness
+[22].</p>
+
+<p class="body">Let <i>T</i> be an information table, <i>D </i>be the decision attribute of <i>T </i>, <i>Y </i>be a concept under <i>D, A(Y) </i>and <i>A(Y ) </i>be the upper and lower approximation, respectively. The roughness is a measure of the degree of certainty of the underlying rough set.</P>
+
+<p class="body">The accuracy with respect to a partition under &#945;, is the ratio of the lower approximation and upper approximation, and the roughness, <i>beta</i>, is 1 minus accuracy:</P>
+
+<div class="equation">
+<img src="004_images/e1.png" class="eqn" width="200px">
+<div class="eqn-number">(1)</div>
+</div>
+
+<p class="body">Researchers (such as [2, 15, 30]) have pointed out some
+limitations of the Pawlak’s accuracy and roughness measures. The main issue is
+that Pawlak’s roughness measure does not consider the granularity of the
+partitions of the data set under the indiscernibility relation. Some modified
+roughness measures were proposed, including rough entropy [2], excess entropy
+[30], knowledge granulation [15], and strong Pawlak roughness [32].</p>
+
+<h4>3. Basics of Rough Set</h4>
+
+<p class="body">Rough set theory proposed by Pawlak
+[21] provides a natural and efficient way for vague and uncertain data analysis
+useful for knowledge processing, especially for information systems. The rough
+set theory overlaps with some other approaches (such as fuzzy set theory) for
+analysis of uncertain data, but it is an independent and distinct method
+dealing with uncertainty in the data. The prominent feature of using rough set
+theory in applications is that it relies only the data alone without any model
+assumptions such as underlying distribution of the data nor the membership
+measure of the data items used in fuzzy sets. As a soft computing paradigm and
+a key “non-traditional” AI area [6], rough set data analysis has been applied
+to many real-world problems, from economics, medical research, to legal
+reasoning.</p>
+
+<p class="body">In this section, we shall
+briefly introduce the basic concepts and definitions of rough set to make the
+paper self-contained. Details of these concepts and definitions can be found in
+the literature, such as [23, 24].</p>
+
+<p class="body">Data collected can be presented
+in an <i>information table</i>. An information table <i>T</i> is a 4-tuple </p>
+
+<div class="equation">
+<img src="004_images/e2.png" class="eqn" width="130px">
+<div class="eqn-number">(2)</div>
+</div>
+
+<p class="body">where <img src="004_images/image00111.png"> is a finite set of cases (objects, observations or records), commonly called the <i>universe</i>, <img src="004_images/image002.png"> is a finite set of attributes, <i>V</i> is a set of values, and <img src="004_images/image003.png"> is a decision function. Each <img src="004_images/image004.png"> is associated with a set of permissible values <img src="004_images/image005.png">. The attributes <i>A</i> is further divided into two groups <i>C</i> and <i>D</i>: <i>C </i>&#8746;<i> D</i> =<i> A</i>, <i>C </i>&#8745;<i> D </i>= &#8709;, where <i>C</i> is a
+set of condition attributes and <i>D</i> is the decision attribute. The
+decision function <img src="004_images/image003.png"> is a mapping <img src="004_images/image006.png">.</P>
+
+<p class="body">Take the information in Table 1 as an example, <img src="004_images/image007.png">, <img src="004_images/image008.png"> where <img src="004_images/image009.png"> is the set of condition attributes and <img src="004_images/image010.png"> is the decision attribute. These attributes take values from the value domains <img src="004_images/image011.png">, <img src="004_images/image012.png">, <img src="004_images/image013.png">, and <img src="004_images/image014.png">. The decision function <img src="004_images/image003.png"> is a mapping:</P>
+
+<div class="equation">
+<img src="004_images/e3.png" class="eqn" width="350px">
+<div class="eqn-number">(3)</div>
+</div>
+
+<p class="body">The set of cases <img src="004_images/image015.png"> can be partitioned into disjoint subsets with respect to an indiscernibility relation on the condition attributes.</P>
+
+<p class="body"><strong>Deﬁnition 1 (indiscernibility relation).</strong> Given an information table <img src="004_images/image016.png">, an <i>indiscernibility relation</i> deﬁned on <img src="004_images/image017.png">, denoted as <img src="004_images/image018.png">, is deﬁned by</P>
+
+<div class="equation">
+<img src="004_images/e4.png" class="eqn" width="300px">
+<div class="eqn-number">(4)</div>
+</div>
+
+<p class="body">where <img src="004_images/image019.png"> is the value of the <img src="004_images/image020.png"> attribute of case <img src="004_images/image021.png">. We also denote the relation as <img src="004_images/image022.png">.</P>
+
+<p class="body">Simply put, the cases in <i>U</i> are partitioned into <NOBR>equal-valued</NOBR> subsets on the attributes in <i>B</i> under indiscernibility relation. An indiscernibility relation is an <i>equivalence relation.</i>
+
+<p class="body">The family of all equivalence classes in the partition under <i>B</i> is denoted <i>U</i>/<i>B</i>. In the example given in Table 1, the equivalence classes under each of the condition attributes are</P>
+
+<div class="equation">
+<img src="004_images/e5.png" class="eqn" width="300px">
+<div class="eqn-number">(5)</div>
+</div>
+
+<p class="body"><strong>Deﬁnition 2 (deﬁnable set and rough set).</strong> An indiscernible set is called an <i>elementary set</i>. A ﬁnite union of elementary sets is called a <i>deﬁnable set</i>. Sets that are not deﬁnable are called <i>rough sets</i>.</P>
+
+<p class="body"><strong>Deﬁnition 3 (concept).</strong> An set of cases <i>X &#8834; U</i> is a <i>concept</i> if <img src="004_images/3.png" width="200px">.</p>
+
+<p class="body">For example, in Table 1, For example, in Table 1, <img src="004_images/10.png" width="80px"> is a concept with <img src="004_images/11.png" width="80px">, while <img src="004_images/12.png" width="80px"> is another concept with <img src="004_images/13.png" width="80px">.</P>
+
+<p class="body"><strong>Deﬁnition 4 (reducible attribute).</strong> If <i>I(A)</i> = <i>I(B)</i> for <i>B &#8834; A</i>, <i>B</i> is a <i>reduct</i> of <i>A</i> and the attributes in <i>A - B</i> are <i>reducible</i>. An attribute set without reducible attributes is said to be a minimal reduct.</p>
+
+<p class="body"><strong>Deﬁnition 5 (decision rule).</strong> Given an information table (<i>U,A,V,&#402;</i>), a <i>decision rule</i> based on the rough set theory is in the form of</P>
+
+<div class="equation">
+<img src="004_images/e6.png" class="eqn" width="100px">
+<div class="eqn-number">(6)</div>
+</div>
+
+<p class="body">where <i>P,Q &#8834; A</i>, and <i>V</i> (.) is the values of its parameter attributes. A rule is a prediction of the the values of <i>Q</i> when the values of <i>P</i> are given.</P>
+
+<p class="body">For example, some decision rules from the information table in Table 1 are</P>
+
+<div class="equation">
+<img src="004_images/e7.png" class="eqn" width="400px">
+<div class="eqn-number">(7)</div>
+</div>
+
+<p class="body"><strong>Deﬁnition 6 (upper and lower approximations).</strong> Let <i>Y</i> be a concept in an information table. The <i>lower approximation</i> of <i>Y</i> , denoted <i>A</i>(<i>Y</i>) is the greatest deﬁnable set contained in <i>Y</i>. That is,</P>
+
+<div class="equation">
+<img src="004_images/e8.png" class="eqn" width="300px">
+<div class="eqn-number">(8)</div>
+</div>
+
+<p class="body">Similarly, the <i>upper approximation</i> of <i>Y</i>, denoted <i>A</i>(<i>Y</i>) is the smallest deﬁnable set containing in <i>Y</i>:</P>
+
+<div class="equation">
+<img src="004_images/e9.png" class="eqn" width="300px">
+<div class="eqn-number">(9)</div>
+</div>
+
+<p class="body">For example, in the information table shown in Table 2, for the concept <img src="004_images/14.png" width="260px"> and <i>A</i>(<i>Y</i>) = {e2}.</p>
+
+<p class="body"><strong>Deﬁnition 7 (boundary).</strong> The boundary of a concept of an information table is <i>A</i>(<i>Y</i>) - <i>A</i>(<i>Y</i>).</P>
+
+<h4>4. Attribute Rearrangment</h4>
+<p class="body">As mentioned in the Introduction section that one of the critical <NOBR>pre-analysis</NOBR> tasks for data analysis is to deal with missing values. In this section, we shall present a new method using rough set that can be used for missing value imputation.</P>
+
+<p class="subhead">4.1. Attribute Rearrangement</p>
+<p class="body">For a given information table <i>T</i> = (<i>U,A,V,&#402;</i>) where <i>A</i> = <i>C</i> &#8746; <i>D</i> with the set of condition attributes <img src="004_images/15.png" width="110px"> and decision attribute <i>D</i> = {<i>d</i>}, we can create a new information table <img src="004_images/16.png" width="110px"> where A' is a <i>rearrangement</i> of <i>A</i>: <i>A'</i> = <i>C'</i> &#8746; <i>D'</i>, where <img src="004_images/17.png" width="130px"> and <img src="004_images/18.png" width="70px">. That is, the original decision attribute is swapped with a condition attribute <i>a<sub>i</sub></i> so that <i>a<sub>i</sub></i> becomes the new decision attribute.</p>
+
+<p class="body">For example, by swapping the decision attribute <i>flu</i> with the condition attribute <i>headache</i> in Table 1, we obtain a new information table shown in Table 2.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 2. Information table with <i>headache</i> as decision attribute.</p>
+<table>
+<thead>
+ <tr>
+  <td rowspan=2>
+  Case
+  </td>
+  <td colspan=3>
+  Condition
+  </td>
+  <td>
+  Decision
+  </td>
+ </tr>
+</thead>
+<tboy>
+ <tr>
+  <td></td>
+  <td>
+  <i>flu</i>
+  </td>
+  <td>
+  <i>muscle_pain</i>
+  </td>
+  <td>
+  <i>temperature</i>
+  </td>
+  <td>
+  <i>headache</i>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e1
+  </td>
+  <td>
+  no
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  normal
+  </td>
+  <td>
+  yes
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e2
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  high
+  </td>
+  <td>
+  yes
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e3
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  very high
+  </td>
+  <td>
+  yes
+  </td>
+ </tr>
+ <tr>
+  <td>
+  e4
+  </td>
+  <td>
+  no
+  </td>
+  <td>
+  yes
+  </td>
+  <td>
+  normal
+  </td>
+  <td>
+  no
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e6
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>no
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">Likewise, making <i>temperature</i> and <i>muscle_pain</i> as the decision attribute, we obtain information tables shown in Table 4 and Table 3, respectively.</P>
+
+<p class="body">In the following, we will analyze the properties of rearrangements of a given information table, and provide several propositions.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 3: Information table with <i>temperature</i> as decision attribute,</p>
+<table>
+<thead>
+ <tr>
+  <td>Case
+  </td>
+  <td colspan=3>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td><i>headache</i>
+  </td>
+  <td><i>muscle_pain</i>
+  </td>
+  <td><i>flu</i>
+  </td>
+  <td><i>temperature</i>
+  </td>
+ </tr>
+ <tr>
+  <td>e1
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+ </tr>
+ <tr>
+  <td>e2
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+ </tr>
+ <tr>
+  <td>e3
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+ </tr>
+ <tr>
+  <td>e4
+  </td>
+  <td>no
+  </td>
+  <td>yes
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+ </tr>
+ <tr>
+  <td>e6
+  </td>
+  <td>no
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 4. Information table with <i>muscle_pain</i> as decision attribute.</p>
+<table>
+  <thead>
+ <tr>
+  <td rowspan=2>Case
+  </td>
+  <td colspan=3>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td><i>headache</i>
+  </td>
+  <td><i>flu</i>
+  </td>
+  <td><i>temperature</i>
+  </td>
+  <td><i>muscle_pain</i>
+  </td>
+ </tr>
+ <tr>
+  <td>e1
+  </td>
+  <td>yes
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e2
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e3
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e4
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e6
+  </td>
+  <td>no
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body"><strong>Proposition 1.</strong> An information table <i>T</i> is deﬁnable (i.e. non rough set) if and only if the decision attribute <i>D</i> is reducible. That is, <i>C</i> &#8746; <i>D</i> and <i>C</i> deﬁne the same indiscernibility relation and elementary sets.</P>
+
+<p class="body">Let <i>T</i> be a rearrangement of a given information table <i>T</i>. If <i>T</i> is deﬁnable (i.e. not a rough set), its boundary set is empty according to the rough set theory. Hence, any elementary set based on all condition attributes <i>C</i> belongs to the same concept. This implies that <i>C</i> &#8746; <i>D</i> does not change the indiscernibility relation deﬁned by <i>C</i>. Thus <i>D</i> is reducible attribute with respect to (<i>C</i> &#8746; <i>D</i>). On the other hand, if <i>T</i> is a rough set, its boundary set is non-empty. This implies that the cases in at least one of the elementary sets deﬁned by <i>C</i> belong to different concepts. Hence, by adding <i>D</i> to the attribute set <i>C</i>, the elementary sets deﬁned by <i>C</i> &#8746; <i>D</i> has changed, indicating that <i>D</i> is not reducible.</P>
+
+<p class="body">For example, let’s consider the information table in Table 1. It is easy to see that the union of the elementary sets deﬁned by the three condition attributes (<i>headache, muscle pain, temperature</i>) is {e<sub>1</sub>} &#8746; {e<sub>2</sub>} &#8746; {e<sub>3</sub>} &#8746; {e<sub>4</sub>} &#8746; {e<sub>5</sub>} &#8746; {e<sub>6</sub>}. By adding the decision <i>ﬂu</i>, the elementary sets deﬁned by (<i>headache, muscle_pain, temperature, ﬂu</i>) is also {e<sub>1</sub>} &#8746; {e<sub>2</sub>} &#8746; {e<sub>3</sub>} &#8746; {e<sub>4</sub>} &#8746; {e<sub>5</sub>} &#8746; {e<sub>6</sub>}. Hence <i>ﬂu</i> is a reducible attribute with respect to (<i>headache, muscle pain, temperature, ﬂu</i>). This indicates that the information table in Table 1 is deﬁnable (not a rough set).</P>
+
+<p class="body">On the other hand, the information table in Table 2 is a rough set because the attribute <i>headache</i> is not reducible with respect to (<i>headache, muscle_pain, temperature, ﬂu</i>).</P>
+
+<p class="body"><strong>Proposition 2.</strong> Assume that the attribute set <i>C</i> &#8746; <i>D</i> of information table <i>T</i> has <i>n</i> + 1 attributes. If any <i>n</i>-attribute subset of <i>C</i> &#8746; <i>D</i> is a minimal reduct with respect to <i>C</i> &#8746; <i>D</i>, all rearrangements of <i>T</i> is deﬁnable.</P>
+
+<p class="body">Let <i>T</i> = <i>C'</i> &#8746; <i>D'</i> be any arrangement of <i>T</i>. Since all <i>n</i>-attribute sets are minimal reduct, <i>C'</i> is a minimal reduct. Hence <i>D'</i> is reducible. From Proposition 1, <i>T</i> is deﬁnable.</P>
+
+<p class="body">Let’s consider an example in Table 5 with three attributes (A,B,C). Since any of the two attributes (A,B), (A,C), or B,C) is a minimum reduct, any rearrangement of the attributes is non-rough.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 5: Any rearrangement of this information table is deﬁnable</p>
+<table>
+  <thead>
+ <tr>
+  <td>Case
+  </td>
+  <td colspan=2>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td><i>A</i>
+  </td>
+  <td><i>B</i>
+  </td>
+  <td><i>C</i>
+  </td>
+ </tr>
+ <tr>
+  <td>1
+  </td>
+  <td>yes
+  </td>
+  <td>3
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>2
+  </td>
+  <td>no
+  </td>
+  <td>1
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>3
+  </td>
+  <td>no
+  </td>
+  <td>2
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>4
+  </td>
+  <td>yes
+  </td>
+  <td>2
+  </td>
+  <td>no
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body"><strong>Proposition 3.</strong> If the set of all attributes <i>C</i> &#8746; <i>D</i> of information table <i>T</i> is a minimum reduct by itself, any rearrangements of <i>T</i> is a rough set.</P>
+
+<p class="body">Since <i>C</i> &#8746; <i>D</i> is a minimum reduct of <i>T</i> , for any rearrangement <i>T</i> with attributes <i>C'</i> &#8746; <i>D'</i>, the attribute <i>D'</i> is not reducible. <i>T</i> is a rough set according to Proposition 1.</P>
+
+<p class="body">Consider the information table in Table 6. The set of all attributes (<i>headache, temperature, ﬂu</i>) is a minimum reduct, so any rearrangement of the information table is a rough set.</P>
+
+<p class="body">Proposition 1 is the answer to question 1 raised in Introduction, whereas Propositions 2 and 3 answered question 2.</P>
+
+<h4>5. Roughness of Rearrangement and Optimal Logic</h4>
+
+<p class="body">In this section, we will introduce the concept of roughness of rearrangement and associated properties that lays a foundation for a method that can be used for missing value imputation.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 6. <i>C</i> &#8746; <i>D</i> is minimum reduct.</p>
+<table>
+  <thead>
+ <tr>
+  <td>Case
+  </td>
+  <td colspan=2>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td><i>headache</i>
+  </td>
+  <td><i>temperature</i>
+  </td>
+  <td><i>flu</i>
+  </td>
+ </tr>
+ <tr>
+  <td>e1
+  </td>
+  <td>yes
+  </td>
+  <td>normal
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e2
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e3
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e4
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e6
+  </td>
+  <td>no
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e7
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e8
+  </td>
+  <td>no
+  </td>
+  <td>very high
+  </td>
+  <td>no
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">In particular, we introduce the concept of optimal logical attribute and optimal logical attribute ﬂow to answer the question 3 raised in Introduction.</p>
+
+<p class="body">Pawlak ﬁrst introduced two certainty measures of rough sets: accuracy and roughness based on the lower and upper approximations [22].</p>
+
+<p class="body">Quite a few different roughness measures were proposed, such as [15, 30], based on Pawlak’s original deﬁnition to address its limitations and apply to different situations. In this paper, we use Pawlak’s deﬁnition, but apply to the rearrangements of an information table to ﬁnd the optimal logical concept and logical attribute ﬂow, for the purpose of missing data imputation.</P>
+
+<p class="body"><strong>Deﬁnition 8 (roughness).</strong> The <i>roughness</i> of rearragement <i>T</i> on concept <i>Y</i> is deﬁned as</p>
+
+<div class="equation">
+<img src="004_images/e10.png" class="eqn" width="200px">
+<div class="eqn-number">(10)</div>
+</div>
+
+<p class="body">where |<i>x</i>| is the cardinality of the set <i>x</i>.</P>
+
+<p class="body">Since |<i>A</i>(<i>Y</i>) | &#8804; |<i>A</i>(<i>Y</i>) |, it is clear that 0 &#8804; &#946; (<i>T</i><sub>Y</sub>) &#8804; 1. From the deﬁnitions of upper and lower approximations, the roughness &#946;(<i>T</i><sub>Y</sub>) is actually a measure of the <i>certainty</i> of the logical relationship <i>C</i> &#8594; <i>D</i> in the rearrangement <i>T</i>. When &#946;(<i>T</i><sub>Y</sub>) is close to 1, the certainty is small, whereas when &#946;(<i>T</i><sub>Y</sub>) is close to 0, the certainty is large.</P>
+
+<p class="body">For the information table and its various rearrangements in Table <NOBR>1-4,</NOBR> we can calculate the roughness of some concepts as shown in Table 7.</P>
+
+<p class="body">Roughness of a rearrangement <i>T<sub>Y</sub></i> on concept <i>Y</i> can be considered as an indicator of the logical relation between the condition attributes and the decision attribute. The lower the value of &#946; (<i>T<sub>Y</sub></i>), the higher certainty of the logical relation. When roughness is 0, the logical relation C &#8594; D is completely certain. Furthermore, for the same rearrangement, the roughness may differ for different concepts. For example, <img src="004_images/19.png" class="eqn" width="180px">, <img src="004_images/20.png" class="eqn" width="180px">, and <img src="004_images/21.png" class="eqn" width="180px">. This indicates that when the concept <i>temperature = normal</i> is concerned, the logical relation C &#8594; D of Table 3 certainly holds. In this example, there are three concepts deﬁned by the decision attribute <i>temperature</i>. In general, there are <i>k</i> concepts deﬁned by the decision attribute in an information table. On one of the concepts the roughness may be most certain. This leads to the following deﬁnition.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 7. Calculation of roughness of rearrangements <i>T<sup>(i)</sup></i>.</p>
+<table>
+  <thead>
+ <tr>
+  <td><i>T</i><sup>(i)</sup>
+  </td>
+  <td>Concept <i>Y</i>
+  </td>
+  <td><img src="004_images/image101.png" class="eqn"><img src="004_images/image102.png" class="eqn">
+  </td>
+  <td>
+  Roughness
+  <img src="004_images/image103.png" class="eqn">
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td><i>T</i><sup>(1)</sup>
+  </td>
+  <td>
+  <i>flu</i> = yes
+  </td>
+  <td>{e2, e3, e6}
+  {e2, e3, e6}
+  </td>
+  <td>(3-3) / 3 = 0
+  </td>
+ </tr>
+ <tr>
+  <td><i>T</i><sup>(2)</sup>
+  </td>
+  <td><i>headache</i> =
+  yes
+  </td>
+  <td>{e1, e2, e3, e4, e6}
+  {e2}
+  </td>
+  <td>(5-4) / 5 = 0.8
+  </td>
+ </tr>
+ <tr>
+  <td><i>T</i><sup>(3)</sup>
+  </td>
+  <td><i>temparature</i>
+  = very high
+  </td>
+  <td>{e2, e3, e6}
+  {e6}
+  </td>
+  <td>(3-1) / 3 = 0.67
+  </td>
+ </tr>
+ <tr>
+  <td><i>T</i><sup>(3)</sup>
+  </td>
+  <td><i>temperature</i>
+  = normal
+  </td>
+  <td>{e1, e4}
+  {e1, e4}
+  </td>
+  <td>(2-2) / 2 = 0
+  </td>
+ </tr>
+ <tr>
+  <td><i>T</i><sup>(4)</sup>
+  </td>
+  <td><i>muscle_pain</i>
+  = yes
+  </td>
+  <td>{e2, e3, e6}
+  {e2, e3, e6}
+  </td>
+  <td>(3-3) / 3 = 0
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body"><strong>Deﬁnition 9 (optimal logic concept).</strong> Let <i>T</i> be a rearrangement of an information table with <i>k</i> concepts <img src="004_images/22.png" class="eqn" width="60px"> deﬁned by the decision attribute. <i>Y<sub>i</sub></i> is called the <i>optimal logic concept</i> if the roughness &#946; (<i>T<sub>Y</sub><sub>i</sub></i>) is the smallest:</P>
+
+<div class="equation">
+<img src="004_images/e11.png" class="eqn" width="180px">
+<div class="eqn-number">(11)</div>
+</div>
+
+<p class="body">For example, in the rearrangements <i>T<sup>(i)</sup></i> given in Tables 1-4 the optimal logic concepts are:</P>
+
+<center>
+<div class="equation">
+<img src="004_images/e12.png" class="eqn" width="400px">
+</div>
+</center>
+
+<p class="body">An optimal logic concept represents a most certain logical relation C &#8594; D in an rearrangement. For example, in the rearrangement <i>T<sup>3</sup></i> when the values of <i>flu, headache,</i> and <i>muscle pain</i> are given, we can conclude about whether the <i>temperature</i> in normal with the highest certainty, but the conclusion about the <i>temperature</i> is high or very high is less certain.</P>
+
+<p class="body">Now, we introduce the idea of <i>optimal logical ﬂow of attributes</i>.</P>
+
+<p class="body">Let <i>T</i> = (U,A,V,&#402;) be an information table with attributes <img src="004_images/23.png" class="eqn" width="120px">. For each attribute <img src="004_images/24.png" class="eqn" width="80px"><img src="004_images/25.png" class="eqn" width="60px">, we create a rearrangement <i>T<sub>Y</sub><sup>(i)</sup></i> with <i>a<sub>i</sub></i> as the decision attribute and <img src="004_images/26.png" class="eqn" width="50px"> be the selected concept. Also, let &#946; (<i>T<sub>Y</sub><sup>(i)</sup></i>) be the roughness of <i>T<sub>Y</sub><sup>(i)</sup></i>. We can then sort <img src="004_images/27.png" class="eqn" width="120px"> in descending order.</P>
+
+<p class="body">The procedure to calculate an optimal ﬂow is given in Algorithm 1.</P>
+
+<center>
+<div class="widetable">
+<table>
+  <thead>
+ <tr>
+  <td colspan=6>
+  <b>Algorithm
+  1:</b> Optimal logical flow
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=3><b>Input:</b>
+  </td>
+  <td colspan=2>
+  <img src="004_images/image104.png" class="eqn"> – an information table with <img src="004_images/image105.png" class="eqn">
+  </td>
+ </tr>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=3><b>Input:</b>
+  </td>
+  <td colspan=2><img src="004_images/image106.png" class="eqn"> – a selection of attribute values
+  </td>
+ </tr>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=3><b>Output:</b>
+  </td>
+  <td colspan=2>
+ Optimal
+  logical flow of <img src="004_images/image107.png" class="eqn"> and <img src="004_images/image108.png" class="eqn">
+  </td>
+ </tr>
+ <tr>
+  <td>1
+  </td>
+  <td colspan="3"><b>begin</b>
+  </td>
+  <td colspan="2">
+  &nbsp;
+  </td>
+ </tr>
+ <tr>
+  <td>
+  2
+  </td>
+  <td colspan=3>
+  &nbsp;
+  </td>
+  <td colspan=2>
+  <b>foreach
+  </b> <img src="004_images/image109.png" class="eqn"><b> do</b>
+  </td>
+ </tr>
+ <tr>
+  <td>3
+  </td>
+  <td colspan=3>
+  &nbsp;
+  </td>
+  <td colspan=2>
+  Create
+  a rearrangement <img src="004_images/image110.png" class="eqn"> with <img src="004_images/image111.png" class="eqn"> as the decision attribute.
+  </td>
+ </tr>
+ <tr>
+  <td>4
+  </td>
+  <td colspan=3>
+  &nbsp;
+  </td>
+  <td colspan=2>
+  Let <img src="004_images/image112.png" class="eqn"> be the selected concept.
+  </td>
+ </tr>
+ <tr>
+  <td>5
+  </td>
+  <td colspan=3>&nbsp;
+  </td>
+  <td colspan=2>Calculate
+  roughness <img src="004_images/image113.png" class="eqn">.
+  </td>
+ </tr>
+ <tr>
+  <td>
+  6
+  </td>
+  <td colspan=3>
+ &nbsp;
+  </td>
+  <td colspan=2><b>end</b>
+  </td>
+ </tr>
+ <tr>
+  <td>7
+  </td>
+  <td colspan=3>&nbsp;
+  </td>
+  <td colspan=2>sort <img src="004_images/image113.png" class="eqn">, <img src="004_images/image114.png" class="eqn"> in descending order.
+  </td>
+ </tr>
+ <tr>
+  <td>8
+  </td>
+  <td colspan=3>&nbsp;
+  </td>
+  <td colspan=2>Let
+  the attributes in the sorted list be <img src="004_images/image115.png" class="eqn">.
+  </td>
+ </tr>
+ <tr>
+  <td>9
+  </td>
+  <td colspan=3>&nbsp;
+  </td>
+  <td colspan=2>Create
+  a list <i>L</i> with attributes <img src="004_images/image115.png" class="eqn">, in that order.
+  </td> 
+</tr>
+ <tr>
+  <td>10
+  </td>
+  <td colspan=3>&nbsp;
+  </td>
+  <td colspan=2><b>return</b> <i>L</i>.
+  </td>
+ </tr>
+ <tr>
+  <td>11
+  </td>
+  <td colspan=5><b>end</b>
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">Optimal logical ﬂow indicates the logical relationships among the attributes in an information table under a group of selected concepts. The last attribute in the ordered list, <img src="004_images/28.png" class="eqn" width="25px">, which yields the smallest roughness value, is the optimal logic attribute. The logical relationship <img src="004_images/29.png" class="eqn" width="120px"> has the best ﬁt with the observed data.</P>
+
+<p class="body">Let’s consider the information table in Table 1 as an example. For the attributes (<i>headache, muscle_pain, temperature, ﬂu</i>), we take (yes, yes, very high, yes) as the selected concepts. For each of the attributes as the decision attribute (and hence the rearrangements in Tables <NOBR>2-4),</NOBR> the roughness values are (see Table 7):</P>
+
+<div class="equation">
+<img src="004_images/e13.png" class="eqn" width="250px">
+<div class="eqn-number">(12)</div>
+</div>
+
+<p class="body">The ordering of these values is 0.8 &gt; 0.67 &gt; 0 &#8805; 0 and their corresponding concepts are (<i>headache</i>=yes, <i>temperature</i>=very high, <i>muscle_pain</i>=yes, <i>ﬂu</i>=yes). Hence, the attribute ﬂow <i>headache &#8594;   temperature &#8594;   muscle_pain &#8594;   flu</i> is an optimal ﬂow. This means that <i>headache</i>(<i>yes</i>) &#8594; <i>temperature</i>(<i>veryhigh</i>) &#8594; <i>muscle_pain</i>(<i>yes</i>) &#8594; <i>flu</i>(<i>yes</i>) reﬂects a logical implication relationship among the attributes based on the observed data. Here either <i>muscle_pain</i>=yes or <i>ﬂu</i>=yes can be the optimal logical attribute.</P>
+
+<p class="body">On the other hand, if we select (no, no, normal, no) as the group of concepts under consideration, we have these roughness values:</P>
+
+<div class="equation">
+<img src="004_images/e14.png" class="eqn" width="250px">
+<div class="eqn-number">(13)</div>
+</div>
+
+<p class="body">With the ordering of these roughness values, there are thee different optimal ﬂow with any of the three attributes <i>ﬂu, temperature</i>, and <i>muscle_pain</i> (with roughness value 0) as the optimal logical attribute (last in the ordering). For example, <i>headache &#8594; flu &#8594; temperature &#8594; muscle pain</i> is one of the optimal ﬂows, indicating that <i>headache</i>(<i>no</i>) &#8594; <i>flu</i>(<i>no</i>) &#8594; <i>temperature</i>(<i>normal</i>) &#8594; <i>muscle_pain</i>(<i>no</i>) and the other two corresponding logical relationships are best implied in the data.</P>
+
+<h4>6. Missing Value Imputation with Rearrangement of Attributes</h4>
+<p class="body">In this section, we shall present an application using rearrangement of rough sets. The application is to impute missing data in information tables that is one of the most important tasks in the <NOBR>pre-processing</NOBR> stage of almost any data analysis problem.</P>
+
+<p class="body">Missing value is a persistent problem for almost all data analysis tasks in the real world. Many approaches were proposed in the literature to deal with missing values [5, 27, 28].The most basic approaches are ad hoc (such as ignore records or attributes with missing values, or replace missing values by a default value such as 0 for numeric data) or statistic based (such as replace missing values with the average of the attribute, the most frequent value of the attribute, or random values based on the estimated distribution of the available data on the attribute). Each of these methods has its advantages and disadvantages. For example, using the most frequent value of the attribute to replace the missing data assumes that the attribute is a random variable. But in practice, an attribute of an information table is hardly random, rather, it may logically relate to other attributes (e.g. causal relationship). The logical relationship may be strong or weak depending on the observed data.</p>
+
+<p class="body">If the data was not in the form of condition/decision, we can select one attribute as the decision and regard other attributes as the condition attributes and therefore form an information table to extract relations between attributes for further missing data imputation.</P>
+
+<p class="body">In this section, we apply the attribute rearrangement idea to the missing data imputation problem. The basic idea is to create a rearrangement of the original information table such that the attribute with to-be-imputed missing data becomes the decision attribute, and then ﬁnd the logical relationship between this attribute and other attributes. If the relationship is strong, we can use the decision rules derived from the rough set theory to determine the value of the missing items; on the other hand, if the relationship is weak, we then impute the missing items using traditional statistic approach such as more frequent value replacement. This process is outlined in Algorithm 2.</P>
+
+<center>
+<div class="widetable">
+<table>
+  <thead>
+ <tr>
+  <td colspan=8><b>Algorithm
+  2:</b> Imputation with rearrangement
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=5><b>Input:</b>
+  </td>
+  <td colspan=2><img src="004_images/image104.png" class="eqn"> – an information table with <img src="004_images/image105.png" class="eqn">
+  </td>
+ </tr>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=5><b>Input:</b>
+  </td>
+  <td colspan=2><img src="004_images/image116.png" class="eqn">– the attribute with to-be-imputed missing data
+  </td>
+ </tr>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=5><b>Input:</b>
+  </td>
+  <td colspan=2><img src="004_images/image117.png" class="eqn"> – a value of <img src="004_images/image116.png" class="eqn">
+  </td>
+ </tr>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=5><b>Input:</b>
+  </td>
+  <td colspan=2><img src="004_images/image118.png" class="eqn"> – threshold of roughness measure
+  </td>
+ </tr>
+ <tr>
+  <td>&nbsp;
+  </td>
+  <td colspan=5><b>Output:</b>
+  </td>
+  <td colspan=2><img src="004_images/image119.png" class="eqn"> - information table of <img src="004_images/image107.png" class="eqn"> with missing data under <img src="004_images/image116.png" class="eqn"> imputed
+  </td>
+ </tr>
+ <tr>
+  <td>1
+  </td>
+  <td colspan=5><b>begin</b>
+  </td>
+  <td colspan=2>&nbsp;
+  </td>
+ </tr>
+ <tr>
+  <td>2
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2>Create
+  a rearrangement <img src="004_images/image119.png" class="eqn"> from <img src="004_images/image107.png" class="eqn"> with <img src="004_images/image116.png" class="eqn"> as the decision attribute.
+  </td>
+ </tr>
+ <tr>
+  <td>3
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2>Let <img src="004_images/image120.png" class="eqn"> be the selected concept.
+  </td>
+ </tr>
+ <tr>
+  <td>4
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2>Calculate
+  roughness <img src="004_images/image121.png" class="eqn">.
+  </td>
+ </tr>
+ <tr>
+  <td>5
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2><b>if
+   </b><img src="004_images/image122.png" class="eqn"> or <img src="004_images/image116.png" class="eqn"> is <i>optimal logical</i> <i>attribute</i> <b>then</b>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  6
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2>Derive
+  decision rules for <img src="004_images/image119.png" class="eqn">.
+  </td>
+ </tr>
+ <tr>
+  <td>7
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2>Assign
+  values for missing items on <img src="004_images/image116.png" class="eqn"> based on decision rules
+  </td>
+ </tr>
+ <tr>
+  <td>8
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2><b>else</b>
+  </td>
+ </tr>
+ <tr>
+  <td>9
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2>Assign
+  values for missing items on <img src="004_images/image116.png" class="eqn"> using most frequent value.
+  </td>
+ </tr>
+ <tr>
+  <td>10
+  </td>
+  <td colspan=5>&nbsp;
+  </td>
+  <td colspan=2><b>return</b><img src="004_images/image119.png" class="eqn">.
+  </td>
+ </tr>
+ <tr>
+  <td>11
+  </td>
+  <td colspan=6><b>end</b>
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">We now illustrate this proposed imputation approach with two examples based on the information table in Table 6.</P>
+
+<p class="body"><strong>Example 1.</strong> In this example, the value on the <i>headache</i> attribute of <i>e</i>8 is missing as shown given in Table 8(a) with * representing the missing value.</P>
+
+<p class="body">By rearranging the attributes to make <i>headache</i> (that has missing value) the decision attribute, the rearrangement <img src="004_images/image119.png" class="eqn"> is shown in Table 8(b) with cases of complete data (i.e. case <i>e</i>8 with missing value is excluded).</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 8. Imputation for missing value on <i>headache</i>.<br>(a) A value on <i>headache</i> is missing.</p>
+<table>
+<thead>
+ <tr>
+  <td rowspan=2>Case
+  </td>
+  <td colspan=2>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td><i>headache</i>
+  </td>
+  <td><i>temperature</i>
+  </td>
+  <td><i>flu</i>
+  </td>
+ </tr>
+ <tr>
+  <td>e1
+  </td>
+  <td>yes
+  </td>
+  <td>normal
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e2
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e3
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e4
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e6
+  </td>
+  <td>no
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e7
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e8
+  </td>
+  <td>*
+  </td>
+  <td>very high
+  </td>
+  <td>no
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<center>
+<div class="widetable">
+  <p class="body">(b) Rearrangement with cases of complete data.</p>
+<table>
+<thead>
+ <tr>
+  <td rowspan=2>Case
+  </td>
+  <td colspan=2>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td><i>flu</i>
+  </td>
+  <td><i>temperature</i>
+  </td>
+  <td><i>headache</i>
+  </td>
+ </tr>
+ <tr>
+  <td>e1
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e2
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e3
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e4
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e6
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e7
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+  <td>no
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">For the selected attribute group (<i>ﬂu=yes, temperature=high, headache=yes</i>), the roughness measure is <img src="004_images/30.png" clsas="img" width="100px"> = 1 indicating that the logical relationship between (<i>ﬂu, temperature</i> and <i>headache</i> is weak. Hence, we consider the value of <i>headache</i> random. Therefore, we can use traditional statistic approach such as most frequent value replacement to decide that <i>headache</i> = <i>no</i>.</P>
+
+<p class="body"><strong>Example 2.</strong> In this example, the value of the <i>temperature</i> attribute of case <i>e</i>6 is missing shown in Table 9(a). Using the seven cases with complete data to rearrange the attribute so that temperature becomes the decision attribute, as shown in Table 9(b).</P>
+
+<p class="body">Selecting the attribute group (<i>headache=yes, ﬂu=yes, temperature=normal</i>), the roughness measure is <img src="004_images/31.png" class="eqn" width="130px"> = 0.67. If the threshold is set at <i>b</i> = 0.75, the roughness measure <img src="004_images/32.png" class="eqn" width="90px">, considered small. We can then calculate the reduct set with these decision rules:</P>
+
+<div class="equation">
+<img src="004_images/e15.png" class="eqn" width="300px">
+<div class="eqn-number">(14)</div>
+</div>
+
+<p class="body">Therefore, we can use either <i>high</i> or <i>very high</i> for the missing temperature value. Since <i>high</i> is the most frequent, the imputed value is determined to be <i>temperature = high</i>.</P>
+
+<p class="body">The application for missing value imputation using rearrangement is an answer to the question 4 raised in the Introduction section.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 9: Imputation for missing value on <i>temperature</i>.<br>(a) A value on <i>temperature</i> is missing.</p>
+<table>
+  <thead>
+ <tr>
+  <td rowspan=2>Case
+  </td>
+  <td colspan=2>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+</tbody>
+ <tr>
+  <td></td>
+  <td><i>headache</i>
+  </td>
+  <td><i>temperature</i>
+  </td>
+  <td><i>flu</i>
+  </td>
+ </tr>
+ <tr>
+  <td>e1
+  </td>
+  <td>yes
+  </td>
+  <td>normal
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e2
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e3
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e4
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>no
+  </td>
+ </tr>
+ <tr>
+  <td>e6
+  </td>
+  <td>no
+  </td>
+  <td>*
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e7
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+  <td>yes
+  </td>
+ </tr>
+ <tr>
+  <td>e8
+  </td>
+  <td>no
+  </td>
+  <td>very high
+  </td>
+  <td>no
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<center>
+<div class="widetable">
+  <p class="body">(b) Rearrangement with cases of complete data.</p>
+<table>
+  <thead>
+ <tr>
+  <td rowspan=2>Case
+  </td>
+  <td colspan=2>Condition
+  </td>
+  <td>Decision
+  </td>
+ </tr>
+</thead>
+ <tr>
+  <td></td>
+  <td><i>headache</i>
+  </td>
+  <td><i>flu</i>
+  </td>
+  <td><i>temperature</i>
+  </td>
+ </tr>
+ <tr>
+  <td>e1
+  </td>
+  <td>yes
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+ </tr>
+ <tr>
+  <td>e2
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+ </tr>
+ <tr>
+  <td>e3
+  </td>
+  <td>yes
+  </td>
+  <td>yes
+  </td>
+  <td>very high
+  </td>
+ </tr>
+ <tr>
+  <td>e4
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>normal
+  </td>
+ </tr>
+ <tr>
+  <td>e5
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>high
+  </td>
+ </tr>
+ <tr>
+  <td>e7
+  </td>
+  <td>no
+  </td>
+  <td>yes
+  </td>
+  <td>high
+  </td>
+ </tr>
+ <tr>
+  <td>e8
+  </td>
+  <td>no
+  </td>
+  <td>no
+  </td>
+  <td>very high
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<h4>7. Experiment</h4>
+<p class="body">We compared the attribute rearrangement approach with two other missing value imputation methods (most common value method and concept most common value) on a small data set about breast cancer collected in a hospital, in which about 30 cases were included. The data and attributes are shown in Table 10.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 10. Breast cancer data from a hospital.</p>
+<table>
+  <thead>
+ <tr>
+  <td>No</td>
+  <td>Age
+  </td>
+  <td>Body-fat
+  </td>
+  <td>Cholesterol
+  </td>
+  <td>Breast
+  Cancer
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td>1
+  </td>
+  <td>29-41
+  </td>
+  <td>18-28
+  </td>
+  <td>188-197
+  </td>
+  <td>No
+  </td>
+ </tr>
+ <tr>
+  <td>2
+  </td>
+  <td>42-56
+  </td>
+  <td>18-28
+  </td>
+  <td>198-320
+  </td>
+  <td>No
+  </td>
+ </tr>
+ <tr>
+  <td>3
+  </td>
+  <td>42-56
+  </td>
+  <td>29-37
+  </td>
+  <td>198-320
+  </td>
+  <td>Yes
+  </td>
+ </tr>
+ <tr>
+  <td>4
+  </td>
+  <td>29-41
+  </td>
+  <td>29-37
+  </td>
+  <td>198-320
+  </td>
+  <td>Yes
+  </td>
+ </tr>
+ <tr>
+  <td>5
+  </td>
+  <td>57-64
+  </td>
+  <td>18-28
+  </td>
+  <td>198-320
+  </td>
+  <td>No
+  </td>
+ </tr>
+ <tr>
+  <td>6
+  </td>
+  <td>42-56
+  </td>
+  <td>18-28
+  </td>
+  <td>188-197
+  </td>
+  <td>Yes
+  </td>
+ </tr>
+ <tr>
+  <td>7
+  </td>
+  <td>29-41
+  </td>
+  <td>18-28
+  </td>
+  <td>188-197
+  </td>
+  <td>No
+  </td>
+ </tr>
+ <tr>
+  <td>8
+  </td>
+  <td>42-56
+  </td>
+  <td>29-37
+  </td>
+  <td>198-320
+  </td>
+  <td>Yes
+  </td>
+ </tr>
+ <tr>
+  <td>9
+  </td>
+  <td>57-64
+  </td>
+  <td>29-37
+  </td>
+  <td>198-320
+  </td>
+  <td>Yes
+  </td>
+ </tr>
+ <tr>
+  <td>10
+  </td>
+  <td>57-64
+  </td>
+  <td>18-28
+  </td>
+  <td>188-197
+  </td>
+  <td>No
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">Three tests were conducted to compare the proposed approach with other two methods. In test 1, we remove some values in the attribute “Age” randomly to make them missing, and then impute the missing attribute values by rearrangement approach, most common value method and concept most common value respectively, and compare the accuracy of the three imputation methods. In tests 2 and 3, we treat the attribute “Body-fat” and “Cholesterol” in the same way as in test 1. The accuracy rates using the three methods from the three tests are listed in Table 11 showing that rearrangement approach performed better than the other two.</P>
+
+<center>
+<div class="widetable">
+  <p class="body">Table 11. Accuracy rates of 3 missing value imputation methods.</p>
+<table>
+  <thead>
+ <tr>
+  <td rowspan=2>Attribute
+  with Missing Value
+  </td>
+  <td colspan=3>Imputation
+  Methods
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td></td>
+  <td>rearrangement
+  </td>
+  <td>most
+  common value
+  </td>
+  <td>concept
+  most common value
+  </td>
+ </tr>
+ <tr>
+  <td>Age
+  </td>
+  <td>0.65
+  </td>
+  <td>0.56
+  </td>
+  <td>0.58
+  </td>
+ </tr>
+ <tr>
+  <td>Body-fat
+  </td>
+  <td>0.75
+  </td>
+  <td>0.50
+  </td>
+  <td>0.58
+  </td>
+ </tr>
+ <tr>
+  <td>Cholesterol
+  </td>
+  <td>0.78
+  </td>
+  <td>0.48
+  </td>
+  <td>0.56
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<h4>8. Conclusion</h4>
+<p class="body">Rough set theory as a mathematical model for handling data with uncertainty has widely used in many application domains in the last two decades. The basic hypothesis of rough set theory is that the data set with uncertainty can be formally represented by a pair of approximations that are used to derive <i>condition &#8594; decision</i> rules. In this paper, we proposed the idea of rearrangement of attributes to explore the logical relations relations (may be considered “causal” relations) among the attributes. Roughness of rearrangements are calculated and optimal logical attribute ﬂows are determined based on the roughness measures. With rearrangement of the missing-value-attribute becoming the decision attribute, the optimal logical attribute ﬂows are used to determine if the decision rules deducted from rough set theory should be used for missing data imputation.</P>
+
+<p class="body">This paper is a preliminary study of the problem addressed. We are currently working on experiments of applying the method to more real data sets, hopefully of relatively large sizes, and establishing evaluation criteria to measure the goodness of the imputation results.</P>
+
+<h4 id="references">References</h4>
+<div class="ref">
+<p class="body">[1] J. G. Bazan and M. Szczuka, ”The rough set exploration system,” <i>Transactions on Rough Sets III</i>, Springer, 2005, pp. 37-56. <a href="http://dx.doi.org/10.1007/11427834_2" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[2] T. Beaubouef, F. E. Petry and G. Arora, ”Informationtheoretic measures of uncertainty for rough sets and rough relational databases,” <i>Information Sciences</i>, vol. 109, no. 1, pp. 185-195, 1998. <a href="http://dx.doi.org/10.1016/S0020-0255(98)00019-X" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[3] T. J. Cleophas and A. H. Zwinderman, "Missing data imputation," <i>Statistical Analysis of Clinical Data on a Pocket Calculator</i>, Springer, 2012, Part 2, pp. 7-10. <a href="http://dx.doi.org/10.1007/978-94-007-4704-3_3" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[4] K. Doksum and J. Y. Koo, "On spline estimators and prediction intervals in nonparametric regression," <i>Computational Statistics & Data Analysis</i>, vol. 35, no. 1, pp. 67-82, 2000. <a href="http://dx.doi.org/10.1016/S0167-9473(99)00116-4" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[5] A. R. T. Donders, G. J. M. G. van der Heijden, T. Stijnen and K. G. M. Moons, "Review: a gentle introduction to imputation of missing values," <i>Journal of clinical epidemiology,</i> vol. 59, no. 10, pp. 1087-1091, 2006. <a href="http://dx.doi.org/10.1016/j.jclinepi.2006.01.014" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[6] I. Duntsch and G. Gediga, "Rough set data analysis," <i>Encyclopedia of Computer Science and Technology</i>, vol. 43, no. 28, pp. 281-301, 2000. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.22.8595&rep=rep1&type=pdf" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[7] J. W. Grzymala-Busse and W. J. Grzymala-Busse, "An experimental comparison of three rough set approaches to missing attribute values," <i>Transactions on rough sets VI</i>, Springer, 2007, vol. 4374, pp. 31-50. <a href="http://dx.doi.org/10.1007/978-3-540-71200-8_3" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[8] J. W. Grzymala-Busse, W. J. Grzymala-Busse, Z. l. S. Hippe and W. Rzasa, "An improved comparison of three rough set approaches to missing attribute values," <i>Control and Cybernetics</i>, vol. 39, no. 2, pp. 469-486, 2010. <a href="http://matwbn.icm.edu.pl/ksiazki/cc/cc39/cc39210.pdf" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[9] J. W. Grzymala-Busse and M. Hu, "A comparison of several approaches to missing attribute values in data mining," <i>Lecture Notes of Artificial Intelligence</i>, Springer, 2007, pp. 378-385. <a href="http://dx.doi.org/10.1007/3-540-45554-X_46" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[10] J. W. Grzymala-Busse and A. Y. Wang, "Modified algorithms LEM1 and LEM2 for rule induction from data with missing attribute values," <i>Proc. of the Fifth International Workshop on Rough Sets and Soft Computing at the Third Joint Conference on Information Sciences</i>, Research Triangle Park, NC, 1997, pp. 69-72.</p>
+
+<p class="body">[11] L. Jing, ”Missing Data Imputation,” PhD thesis, University of California, Los Angeles, 2012. <a href="https://escholarship.org/uc/item/0mm4x970#page-12" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[12] M. Kryszkiewicz, "Rough set approach to incomplete information systems," <i>Information sciences</i>, vol. 112, no. 1, pp. 39-49, 1998. <a href="http://dx.doi.org/10.1016/S0020-0255(98)10019-1" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[13] R. Latkowski, "Flexible indiscernibility relations for missing attribute values," <i>Fundamenta informaticae</i>, vol. 67, no. 1, pp. 131-147, 2005. <a href="http://dl.acm.org/citation.cfm?id=2370187" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[14] D. Li, J. Deogun, W. Spaulding and B. Shuart, "Dealing with missing data: Algorithms based on fuzzy set and rough set theories," <i>Transactions on Rough Sets IV, Lecture Notes in Computer Science</i>, Springer, 2005, vol. 3700, pp. 35-57. <a href="http://dx.doi.org/10.1007/11574798_3" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[15] J. Liang, J. Wang and Y. Qian, "A new measure of uncertainty based on knowledge granulation for rough sets," <i>Information Sciences</i>, vol. 179, no. 4, pp.458-470, 2009. <a href="http://dx.doi.org/doi:10.1016/j.ins.2008.10.010" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[16] R. J. A. Little, "Regression with missing x’s: a review," <i>Journal of the American Statistical Association</i>, vol. 87, no. 420, pp. 1227-1237, 1992. <a href="http://dx.doi.org/doi:10.1080/01621459.1992.10476282" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[17] R. J. A. Little and D. B. Rubin, ”Statistical analysis with missing data,” John Wiley & Sons, 2014. <a href="http://ca.wiley.com/WileyCDA/WileyTitle/productCd-1118625889.html" target="_blank" class="body-link">View Book</a></p>
+
+<p class="body">[18] T. Marwala, "Missing data estimation using rough sets," <i>Computational Intelligence for Missing Data Imputation, Estimation, and Management: Knowledge Optimization Techniques</i>, IGI Global, 2007, pp. 94-116. <a href="http://dx.doi.org/doi:10.4018/978-1-60566-336-4.ch005" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[19] F. V. Nelwamondo and T. Marwala, "Rough sets computations to impute missing data," <i>Computing Research Repository</i>, abs/0704.3635, 2007. <a href="http://arxiv.org/pdf/0704.3635v1.pdf" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[20] A. A. Ng and M. I. Jordan, "On discriminative vs. generative classifiers: A comparison of logistic regression and naive Bayes," <i>Advances in neural information processing systems</i>, vol. 14, no. 841, 2002. <a href="https://books.google.ca/books?hl=en&lr=&id=GbC8cqxGR7YC&oi=fnd&pg=PA841&dq=On+discriminative+vs.+generative+classifiers:+A+comparison+of+logistic+regression+and+naive+Bayes&ots=ZwM1F__zA4&sig=zeOmJx99AZocGBxJbwv2we7yNwc#v=onepage&q=On%20discriminative%20vs.%20generative%20classifiers%3A%20A%20comparison%20of%20logistic%20regression%20and%20naive%20Bayes&f=false" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[21] Z. Pawlak, "Rough set," <i>International Journal of Parallel Programming</i>, vol. 11, no. 5, pp. 341-356, 1982. <a href="http://dx.doi.org/10.1007/BF01001956" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[22] Z. Pawlak, <i>Rough sets: theoretical aspect of reasoning about data,</i> Springer, 1991. <a href="http://dx.doi.org/10.1007/978-94-011-3534-4" target="_blank" class="body-link">View Book</a></p>
+
+<p class="body">[23] Z. Pawlak, J. Grzymala-Busse, R. Slowinski and W. Ziarko, "Rough sets," <i>Communication of the ACM</i>, vol. 38, no. 11, pp. 89-95, 1995. <a href="http://dx.doi.org/10.1145/219717.219791" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[24] Z. Pawlak and A. Skowron, "Rudiments of rough sets," <i>Information Sciences</i>, vol. 177, no. 1, pp. 3-27, 2007. <a href="http://dx.doi.org/doi:10.1016/j.ins.2006.06.003" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[25] I. Rish, "An empirical study of the naive Bayes classiﬁer," <i>IJCAI 2001 workshop on empirical methods in artificial intelligence</i>, IBM New York, 2001, vol. 3, pp. 41-46. <a href="http://www.researchgate.net/profile/Irina_Rish/publication/228845263_An_empirical_study_of_the_naive_Bayes_classifier/links/00b7d52dc3ccd8d692000000.pdf" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[26] P. Royston, "Multiple imputation of missing values," <i>The Stata Journal</i>, vol. 4, no. 3, pp. 227-241, 2004. <a href="http://ageconsearch.umn.edu/bitstream/116244/2/sjart_st0067.pdf" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[27] D. B. Rubin, <i>Multiple imputation for nonresponse in surveys</i>. Wiley.com, 2009, vol. 307. <a href="http://ca.wiley.com/WileyCDA/WileyTitle/productCd-0470317361.html" target="_blank" class="body-link">View Book</a></p>
+
+<p class="body">[28] J. L. Schafer, <i>Analysis of incomplete multivariate data</i>. CRC press, 2010.</p>
+
+<p class="body">[29] N. A. Setiawan, P. Venkatachalam and A. F. M. Hani, "Missing attribute value prediction based on artificial neural network and rough set theory," <i>Proceedings of International Conference on BioMedical Engineering and Informatics</i>, vol. 1, pp. 306-310, 2008. <a href="http://dx.doi.org/10.1109/BMEI.2008.322" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[30] B. Xu, Y. Zhou and H. Lu, "An improved accuracy measure for rough sets," <i>Journal of Computer and System Sciences</i>, vol. 71, no. 2, pp. 163-173,2005. <a href="http://dx.doi.org/doi:10.1016/j.jcss.2005.02.002" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[31] Y. C. Yuan, <i>Multiple imputation for missing data: Concepts and new development (version 9.0),</i>" SAS Institute Inc, Rockville, MD, 2010. <a href="http://facweb.cdm.depaul.edu/sjost/csc423/documents/multipleimputation.pdf" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[32] P. Zhu, "An axiomatic approach to the roughness measure of rough sets", <i>Fundamenta Informaticae,</i> vol. 109, no. 4, pp. 463-480, 2011. <a href="http://arxiv.org/abs/0911.5395" target="_blank" class="body-link">View Article</a></p>
+</div> <!-- REF -->
+
+  </div> <!-- INDENT -->
+  </div> <!-- Main Content -->
+</div>
+</div>
+
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
+  </div>
+
+</div>
+</footer>
+</div>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
+</html>

@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="{{page.meta}}">
+<meta name="keywords" content="{{page.keyword}}">
+<title>CVMLDM - A Vision System for Classifying Butterfly Species by using Law’s Texture Energy Measures</title>
+
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
+
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!-- Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>International Journal on Computer Vision, Machine Learning, and Data Mining (CVMLDM)</h1>
+    <!-- <p class="body">ISSN:</p> -->
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+    </div>
+  </div>
+  </div>
+
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
+
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">
+      Volume 1 - Year 2015 - Pages 20-28<br>
+      DOI: TBD</p>
+    </div>
+
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/003.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
+
+    <h3 class="center">A Vision System for Classifying Butterfly Species by using Law’s Texture Energy Measures</h3>
+
+    <p class="body-bold center">Ertuğrul Ömer Faruk<sup>1*</sup>, Kaya Yılmaz<sup>2</sup>, Kayci Lokman<sup>3</sup>, Tekin Ramazan<sup>4</sup></p>
+    <p class="body center"><sup>1</sup>Department Electrical and Electronic Engineering, Batman University, 72060 Batman, Turkey<br>
+omerfarukertugrul@gmail.com<br>
+<sup>2</sup>Department of Computer Engineering, Siirt University, 56100 Siirt, Turkey<br>
+<sup>3</sup>Department of Biology, Siirt University, 56100 Siirt, Turkey<br>
+<sup>4</sup>Department of Computer Engineering, Batman University, 72060 Batman, Turkey<br>
+yilmazkaya1977@gmail.com; kaycilokman@gmail.com; ramazan.tekin@batman.edu.tr</p>
+
+    <p class="body"><b>Abstract</b> - <i>Butterflies can be classified by their external morphological characters. Carpological or molecular studies are required when identification with these characters is impossible. For butterflies and moths, analysis of genital characters is also important. However, genital characters that can be obtained using various chemical substances and methods are very expensive and carried out manually by preparing genital slides through some certain processes or molecular techniques. In this study, Law’s texture energy measure method was presented for identification of butterfly species as an alternative to conventional diagnostic methods and other image processing methods. Mean, standard deviation and entropy of filtered images were used as a texture feature set of the butterflies. The best suitable features were used for classification with kNN, SVM and ELM, which were also optimized for butterfly dataset, with 99.26%, 98.16% and 99.47%, respectively. These findings suggest that the ELM algorithm and Law’s texture energy technique are feasible and excellent for the identification and classification of butterfly species.</i></p>
+
+    <p class="body"><b><i>Keywords:</i></b> Butterfly Identification, Machine Learning, Law’s texture energy map, texture analysis, support vector machine, extreme learning machine, k nearest neighbour.</p>
+
+    <p class="body">© Copyright 2015 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+    <p class="body">Date Received: 2014-11-23<br />
+    Date Accepted: 2015-01-05<br>
+    Date Published: 2015-01-15 </p>
+
+  <div class="border"></div>
+
+  <div class="indent">
+  
+  <h4>1. Introduction</h4>
+
+<p class="body">Butterflies are a member of the Lepidoptera order
+in insects family that represented by 1.5 million species in the animal
+kingdom. There are 170.000 butterfly species and they can be distinguishable
+from each other by wing shapes, textures and colours which vary over a wide
+range. Kayci reported that very similar species can be identified by examining
+the external structural features of the genital organs, particularly of the
+male [1]. Additionally, Paul and Ryan presented that also the identification of
+species can be done by molecular level studies [2]. Furthermore, Kaya et al. demonstrated that the butterfly species
+can be classified by using image processing techniques by a machine learning
+method with high accuracy [3]. In their study,
+the energy spatial Gabor filtered (GF) (different orientations and frequencies)
+images were used for representing images and classification was carried out by
+various classification methods. The highest obtained accuracy is 97% by ELM. In
+other studies, they obtained 96.3% and 92.85% classification accuracy, while
+employing grey-level co-occurrence matrix (GLCM) with multinomial logistic
+regression (MLR) [4], and GLCM with ANN [5] methods, respectively. Additionally
+we employed GLCM and local binary pattern (LBP) with ELM with 98.25%, 96.45%
+accuracy, respectively [6]. </p>
+
+<p class="body">Although the obtained accuracies are high and the
+proposed methods can be acceptable because of low work and time requirements,
+Chaudhuri and Sarkar reported that the choice of proper texture analysis method
+is heightens the discriminative power [7] which is X is a major problem in
+image processing. Therefore the aim of this study is to investigate more proper
+texture analysis method for butterfly identification. The texture methods were
+reviewed in [8, 9]. Basically the popular ones are grey-level co-occurrence
+matrix (GLCM) [10], local binary patterns (LBP) [11], texture energy measure (TEM)
+[11, 12, 13], and each of them has a different characteristic and more
+effective for some types of problems, such as in GLCM, the statistical features
+are changed depending on selected angle and distance parameters. Especially,
+TEM has high ability to detect micro-patterns in image and it have been used
+for detecting edges, levels, waves, spots and ripples at chosen vector length
+neighbouring pixels in both horizontal and vertical direction since the
+butterfly species distinguish from each other by their morphological
+properties. TEM is based on filtering an image with predefined special masks
+and later their statistical features such as mean, standard deviation and entropy
+are used in place of images. TEM may have better performance than other alternative
+approaches. Because it provides several masked images from the original image
+that detects levels, edges, spots, waves and ripples in specified pixel
+neighbours and more useful features may be obtained from masked images [14],
+which is demonstrated by Pietikainen et al. [15, 16]. A considerable amount of
+literature has been published on TEM depend on its easy structure and high
+power of extracting distinguishable features such as bone analysis [13] in
+which 5-VL TEM masks were employed to analyse bone micro-architecture, ultrasonic
+liver images [17] and atherosclerotic carotid plaques [18]. Therefore, this
+study is aimed to evaluate and validate the applicability of texture energy
+measure method (TEM), which is defined by Law [12], for butterfly identification.</p>
+
+<p class="body">In this study, features were
+extracted by statistical variables from filtered butterfly images with 3, 5 and
+7 vector length TEM masks. The relevant features were selected for decreasing
+the computational cost.  The proposed method is formed in two stages; first,
+texture features are obtained from a butterfly image by different sized TEM
+filters and second, the classification process with machine learning methods
+such as a k nearest neighbour (kNN), support vector machines (SVM), and extreme
+learning machine (ELM) were performed using these features. In this study, we
+wished to demonstrate that the texture features of organisms are also decisive
+among the external morphological features used in identification. The rest of
+the paper was organized as follows. The material used in this study was
+explained in the next section. In Section 3, the process of Law’s texture
+energy measures method was explained. Additionally, the concept of kNN, SVM and
+ELM machine learning methods and the proposed model is briefly described.
+Results and discussions are provided in Section 4, while Section 5 concludes
+the paper.</p>
+
+<h4>2. Material</h4>
+
+<p class="body">Specimens of butterfly species were collected in
+the Lake Van basin between May 2005 and August 2010 at altitudes of 1800 and 3200
+m. [3-6], classified and imaged by the third author. The identification of
+butterflies were depending on the  morphological features of the extremities
+and organs on the head and thorax, textures and colours on the upper and lower
+sides of the wings as the methods explained by Carbonell [19], Skala [20],
+Hesselbarth et al. [21] and Tolman (1997) [22]. The image dataset was consisted
+of 10 images, for each of the 19 species and a sample of the dataset is shown
+in Figure 1.</p>
+
+<figure>
+<img src="003_files/image001.jpg" class="article-img">
+
+<figcaption>
+Figure
+1. The selected samples from nineteen butterflies’ species.</figcaption>
+</figure>
+
+<h4>3. Method</h4>
+
+<p class="body">A variety of methods are used to assess butterfly
+textures. Each has its advantages and drawbacks, such as the energy spatial
+Gabor filtered [3], grey-level co-occurrence matrix [4], and local binary
+pattern [6]. Kaya et al. pointed out that the butterflies can be distinguished
+according to their textures [3-6], and TEM method is an effective method for
+detecting texture [15, 16]. In this study, TEM was used for extracting features.
+The TEM approach has a number of attractive features for detecting special
+texture types from an image, which will be described.</p>
+
+<p class="subhead">3.1. Texture Energy
+Measure</p>
+
+<p class="body">In TEM, firstly the image is filtered with
+predefined masks, which are formed with 1-D TEM vectors. These 1-D TEM vectors
+are defined for detecting levels, edges, ripples and spots in an image. There
+are 3 types of 1(one) dimension TEM vectors defined which have 3, 5 or 7 vector
+lengths (VL) [12, 13 and 23]. The VL shows in which range or neighbouring size
+the filters will detect. The 1-D TEM vectors are shown in Table 1.</p>
+
+<center>
+<div class="widetable">
+  <p class="body">Table
+1. TEM Vectors.</p>
+<table>
+<thead>
+ <tr>
+  <td></td>
+ <td><b>3 – VL</b>
+  </td>
+  <td><b>5 – VL</b>
+  </td>
+  <td><b>7 – VL</b>
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td><b>Level</b>
+  </td>
+  <td>L<sub>3</sub>=[1
+  2 1]
+  </td>
+  <td>L<sub>5</sub>
+  = [1 4 6 4 1]
+  </td>
+  <td>L<sub>7</sub>=[1 6 15 20 15 6 1]
+  </td>
+ </tr>
+ <tr>
+  <td><b>Edge</b>
+  </td>
+  <td>E<sub>3</sub>=[-1
+  0 1]
+  </td>
+  <td>E<sub>5</sub>
+  = [-1 -2 0 3 1]
+  </td>
+  <td>E<sub>7</sub>=[-1 -4 -5 0 5 4 1]
+  </td>
+ </tr>
+ <tr>
+  <td><b>Spot</b>
+  </td>
+  <td>S<sub>3</sub>=[-1
+  2 -1]
+  </td>
+  <td>S<sub>5</sub>
+  = [-1 0 2 0 -1]</td>
+  <td>S<sub>7</sub>=[-1 -2 1 4 1 -2 -1]</td>
+ </tr>
+ <tr>
+  <td><b>Wave</b>
+  </td>
+  <td>&nbsp;
+  </td>
+  <td>W<sub>5 </sub> =[-1 2 0 -2 1]
+  </td>
+  <td>&nbsp;
+  </td>
+ </tr>
+ <tr>
+  <td><b>Ripple</b>
+  </td>
+  <td>&nbsp;
+  </td>
+  <td>R<sub>5</sub> = [1 -4 6 -4 1]
+  </td>
+  <td>&nbsp;
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">where [1];</p>
+
+<ul>
+  <li>Level:  average grey level,</li>
+  <li>Edge: extract edge features,</li>
+  <li>Spot: extract spots, </li>
+  <li>Wave: extract wave features,</li>
+  <li>Ripple: extract ripples.</li>
+</ul>
+
+<p class="body">Each 1D TEM
+vector has its own structure and the characteristics of them is special to
+determine the same type of texture in the image. These 1-D TEM vectors
+determined and named as shown in Table 2.</p>
+
+<p class="body">For 3 and 7 VL
+only 9 TEM masks and for 5 VL, 25 TEM filters was defined and each filter has
+its own special property as seen in Table 2. The statistical features, such as;
+mean, standard deviation, entropy, skewness and kurtosis of filtered images are
+used for describing the images [13], since Tamura et al. reported that human
+texture perception is sensitive to first and second-order statistics and does 
+not  respond  to higher than  second-order [24]. Also, if the directionality of
+images isn’t important, then the mean of the horizontal and vertical vectors of
+the same filters can be used, for feature reduction; [23], such as</p>
+
+
+<div class="equation">
+  <div class="eqn">
+    <p class="body">S<sub>7</sub>L<sub>7</sub>TR=(S<sub>7</sub>L<sub>7</sub>+L<sub>7</sub>S<sub>7</sub>)/2</p>
+  </div>
+<div class="eqn-number">(1)</div>
+</div>
+
+<center>
+<div class="widetable">
+<p class="body">Table
+2. TEM Filter Examples.</p>
+<table>
+<thead>
+ <tr>
+  <td><b>Mask</b>
+  </td>
+  <td><b>Calculation</b>
+  </td>
+  <td><b>Description</b>
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td>E<sub>3</sub>S<sub>3</sub>
+  </td>
+  <td>E3<sup>T</sup>*S3
+  </td>
+  <td>Edge detection in horizontal direction
+  and spot detection in vertical direction  of 3 neighbouring pixels in both
+  horizontal and vertical direction
+  </td>
+ </tr>
+ <tr>
+  <td>W<sub>5</sub>W<sub>5</sub>
+  </td>
+  <td>W<sub>5</sub><sup>T</sup>
+  *W<sub>5</sub>
+  </td>
+  <td>Wave detection in both horizontal and
+  vertical direction of 5 neighbouring pixels in both horizontal and vertical
+  direction
+  </td>
+ </tr>
+ <tr>
+  <td>L<sub>5</sub>R<sub>5</sub>
+  </td>
+  <td>L<sub>5</sub><sup>T</sup>
+  *R<sub>5</sub>
+  </td>
+  <td>Ripple detection in horizontal and grey
+  level intensity in vertical direction of 5 neighbouring pixels in both
+  horizontal and vertical direction
+  </td>
+ </tr>
+ <tr>
+  <td>L<sub>7</sub>S<sub>7</sub>
+  </td>
+  <td>L<sub>7</sub><sup>T*</sup>S<sub>7</sub>
+  </td>
+  <td>Spot detection in horizontal direction
+  and grey level intensity in vertical direction  of 7 neighbouring pixels in
+  both horizontal and vertical direction
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="subhead">3.2. Machine
+Learning Methods</p>
+
+<p class="body"><b>k Nearest Neighbours (kNN)</b> method is a
+popular and there are many versions of kNN methods such as nearest neighbour,
+weighted nearest neighbour and k nearest neighbour mean classifier.  This
+method depends on a simple idea, which is an unclassified data has the same
+class with its nearest neighbours. The kNN is optimized by determining the best
+suitable number of neighbours (k) and distance calculation method for computing
+the distance between the query and train data such as Euclidian, Manhattan and
+Supreme [25].  </p>
+
+<p class="body"><b>Support Vector Machine (SVM)</b> algorithm
+tries to find one or multiple hyper-planes that separate point sets binding two
+or more conditions or events. An infinite-dimensional hyper-plane is
+differentiating a data set as one of the states on the one side of the plane
+and other states on the other side of the plane. The most appropriate plane is
+the one farthest from any neighbour points belong to a class.  In general,
+since a finite-dimensional data set cannot be decomposed linearly, the decomposition
+is achieved by transferring the data to a larger dimensional space. The most
+suitable hyper-plane, according to the support vector is the one which provides
+the widest separation between two classes. If there is such a hyper-plane it is
+the maximum-margin hyper-plane and this is called a maximal margin SVM
+classifier. For a linear separable condition SVM the decision function is
+expressed as follows [26],</p>
+
+<div class="equation">
+<img src="003_files/image002.png" class="eqn">
+<div class="eqn-number">(2)</div>
+</div>
+
+<p class="body">where <img src="003_files/image003.png"> are Lagrange factors obtained by the solution of
+the following convex quadratic programming (QP) problem [27].</p>
+
+<div class="equation">
+<img src="003_files/image004.png" class="eqn">
+<img src="003_files/image005.png" class="eqn">
+<div class="eqn-number">(3)</div>
+</div>
+
+<p class="body">where; <img src="003_files/image006.png">, <img src="003_files/image007.png">. In classification problems which cannot be separated linearly, using smoothed margins for a minimum classification error
+in 1995, Cortes and Vapnik modified the detection of the maximum margin [28].
+The modified decision function and the quadratic form of the dual problem are
+as follows [29],</p>
+
+<div class="equation">
+<img src="003_files/image008.png" class="eqn">
+<div class="eqn-number">(4)</div>
+</div>
+
+<div class="equation">
+<img src="003_files/image009.png" class="eqn">
+<div class="eqn-number">(5)</div>
+</div>
+
+<p class="body">where; <img src="003_files/image010.png">, <img src="003_files/image011.png"> and the kernel is expressed as <img src="003_files/image012.png">. After transferring the data to high-dimensional
+space with a kernel function, then it can be separated with maximum margin
+linear classification method [30]. The commonly used kernels are linear,
+radial-based polynomial, and sigmoid kernel functions.</p>
+
+<p class="body"><b>Extreme Learning Machine</b> (ELM) is a
+training method for single hidden layer feed forward artificial neural networks
+(SLFN). The SLFN structure is illustrated in Figure 2.</p>
+
+<p class="body">According to Figure 2, on determining that X(1&#8943;n) is
+input and Y(1&#8943;p) is output, the mathematical model with M hidden neurons
+can be defined as [31].</p>
+
+<div class="equation">
+<img src="003_files/image013.png" class="eqn"><i>, k=1,2,3,..N</i>
+<div class="eqn-number">(6)</div>
+</div>
+
+<p class="body">where W_(i1-in) and &#946;_(i1-im) are the input
+and output weights; b_i is the threshold of the hidden neuron and O_k is the
+output of the network. g(.) denotes the activation function [32]. In a network
+of N training samples, the aim is with zero error &#8721;_(k=1)^N&#9618;&#12310;(O_k-Y_k
+)=0&#12311; or with min error &#8721;_(k=1)^N&#9618;&#12310;(O_k-Y_k )^2 &#12311;.
+Therefore, equation 6 can be shown as below [33].</p>
+
+<figure>
+<img src="003_files/image014.jpg" class="article-img">
+
+<figcaption>
+Figure 2. The structure of a single hidden layer
+feed-forward artificial neural network.</figcaption>
+</figure>
+
+<div class="equation">
+<img src="003_files/image015.png" class="eqn">, <img src="003_files/image016.png" class="eqn">
+<div class="eqn-number">(7)</div>
+</div>
+
+<p class="body">Because in the
+equation above <img src="003_files/image017.png"> denotes output
+matrix in the hidden layer, equation 6 can be placed as [33];</p>
+
+<div class="equation">
+<img src="003_files/image019.png" class="eqn">
+<div class="eqn-number">(8)</div>
+</div>
+
+<p class="body">where;</p>
+
+<div class="equation">
+<img src="003_files/image020.png" class="eqn">
+<div class="eqn-number">(9)</div>
+</div>
+
+<div class="equation">
+<img src="003_files/image021.png" class="eqn"> and <img src="003_files/image022.png" class="eqn">
+<div class="eqn-number">(10)</div>
+</div>
+
+<p class="body"><i>H</i> denotes the
+hidden layer output matrix [31]. Input weights in ELM <img src="003_files/image024.png"> and <img src="003_files/image025.png"> hidden layer biases have been randomly produced,
+and the hidden layer output matrix <i>H</i> is obtained analytically. The
+procedure of training an SLFN is to seek the least-squares solution of the
+linear system <img src="003_files/image019.png"> in ELM [34]:</p>
+
+<div class="equation">
+<img src="003_files/image026.png" class="eqn">
+<div class="eqn-number">(11)</div>
+</div>
+
+<p class="body">Above, <img src="003_files/image027.png"> is the
+smallest norm least-squares of <img src="003_files/image019.png"> Furthermore, <img src="003_files/image029.png"> indicates the
+Moore-Penrose generalized inverse of <i>H</i>. The norm of <img src="003_files/image031.png"> is the
+smallest among all the least-squares solutions of [33-36].</p>
+
+<p class="subhead">3.3. Proposed Method</p>
+
+<p class="body">In this study,
+TEM and machine learning methods were used for butterfly species identification
+from 190 butterfly images, which were belonging to 19 species. The study consisted of
+5 stages as seen in Figure 3.</p>
+
+<figure>
+<img src="003_files/image032.png" class="article-img">
+
+<figcaption>
+Figure 3. The block diagram of a butterfly
+identification system.</figcaption>
+</figure>
+
+<p class="body">The process in
+Figure 3 can be summarized as follows briefly. </p>
+
+<p class="body"><b>Block 1:</b> RGB butterfly
+images were converted to grey images and resize to 512x512 pixel image to
+decrease the computational cost.</p>
+
+<p class="body"><b>Block 2</b>:  Getting
+statistical features, such as; the mean, standard deviation and entropy of
+filtered images.</p>
+
+<p class="body"><b>Block 3:</b> Ranking
+features with “Info Gain Attribute Eval” method in Weka for getting the worth
+of a feature by measuring the information gain with respect to the class [28].</p>
+
+<p class="body"><b>Block 4:</b> Optimization
+of kNN, SVM and ELM methods through butterfly data set.</p>
+
+<p class="body"><b>Block 5</b>:
+Classification of data set through kNN, SVM and ELM classification machine
+learning methods (decision stage).</p>
+
+<h4>4. Results and Discussion</h4>
+
+<p class="subhead">4.1. Feature Extraction</p>
+
+<p class="body">Firstly, to decrease the
+computational cost the images in the dataset were transformed from RGB to grey
+and a sample is shown in Figure 4.</p>
+
+<p class="body">Secondly, the grey images
+are filtered by predefined TEM masks in each VL (3, 5 and 7). The filtered
+images (for the image in Figure 4-b), which are labelled by employed masks
+name, are shown in Figure 5, 6 and 7 for vector length 3, 5 and 7,
+respectively. The mean, standard deviation (STD) and entropy of the filtered
+images were used to describe the butterfly images. 27 features are extracted
+for 3 and 7 VL and 75 features for 5 VL extracted for each feature.</p>
+
+<figure>
+<img src="003_files/image033.jpg" class="article-img">
+
+<figcaption>
+Figure
+4. The butterfly image: a) the original butterfly image, b) grey of butterfly
+image.</figcaption>
+</figure>
+
+<figure>
+<img src="003_files/image034.png" class="article-img">
+
+<figcaption>
+Figure
+5. 3-VL TEM Filtered Image.</figcaption>
+</figure>
+
+<figure>
+<img src="003_files/image035.png" class="article-img">
+
+<figcaption>
+Figure
+6. 5-VL TEM Filtered Image.</figcaption>
+</figure>
+
+<figure>
+<img src="003_files/image036.png" class="article-img">
+
+<figcaption>
+Figure
+7. 7-VL TEM Filtered Image.</figcaption>
+</figure>
+
+<p class="subhead">4.2. Feature Selection</p>
+
+<p class="body">The feature selection
+methods are used for determining the most relevant features in a dataset which
+may also consist of irrelevant, redundant or noisy features. Feature selection
+provides advantages like reduction of the computational cost, improvement of
+the data quality by means of filtering noisy features and enhancing the
+accuracy of machine learning method [37, 38]. In this study, the features were
+selected depend on “Info Gain Attribute Eval” method that evaluates the worth
+of an attribute by measuring the information gain with respect to the class, in
+Weka that is a collection of machine learning tools for data mining purposes
+including data pre-processing, feature selection, classification, clustering,
+association rules and visualization [39].  The most relevant three features
+extracted from 3, 5 and 7 VL TEM filtered images are shown in Table 3. </p>
+
+<center>
+<div class="widetable">
+  <p class="body">Table
+3. The Feature Ranks of Statistical Variables from Vector Length 3 TEM Filters.</p>
+<table>
+<thead>
+ <tr>
+  <td><b>Vector Length</b>
+  </td>
+  <td><b>Feature Order</b>
+  </td>
+  <td><b>Mask Name</b>
+  </td>
+  <td><b>Statistical
+  Feature</b>
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td>3 VL</p>
+  </td>
+  <td>1<br>2<br>3
+  </td>
+  <td>L<sub>3</sub><sup>T</sup>*E<sub>3</sub>
+    <br>E<sub>3</sub><sup>T</sup>*S<sub>3</sub>
+    <br>L<sub>3</sub><sup>T</sup>*S<sub>3</sub>
+  </td>
+  <td>Std<br>Std<br>Std
+  </td>
+ </tr>
+ <tr>
+  <td>5 VL</p>
+  </td>
+  <td>1<br>2<br>3
+  </td>
+  <td>S<sub>5</sub><sup>T</sup>*R<sub>5</sub>
+    <br>L<sub>5</sub><sup>T</sup>*W<sub>5</sub>
+    <br>E<sub>5</sub><sup>T</sup>*L<sub>5</sub>
+  </td>
+  <td>Mean<br>Mean<br>Entropy
+  </td>
+ </tr>
+ <tr>
+  <td>7 VL</p>
+  </td>
+  <td>1<br>2<br>3
+  </td>
+  <td>L<sub>7</sub><sup>T</sup>*L<sub>7</sub>
+    <br>L<sub>7</sub><sup>T</sup>*S<sub>7</sub>
+    <br>L<sub>7</sub><sup>
+  T</sup>*E<sub>7</sub>
+  </td>
+  <td>Mean<br>Std<br>Std
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+</center>
+
+<p class="body">Determining the best
+suitable number of features is done as follows. Firstly the features are sorted
+depending on their feature ranks and a new the dataset was generated with only
+the feature that has the highest rank and next the accuracy of using this
+dataset was calculated. The dataset was enlarged by adding the features one by
+one until it contained the whole dataset. Afterwards, the best dataset was
+determined by assessing the accuracy. The kNN method was used in this process.
+The obtained accuracies depend on the number of features are shown in Figure 8.</p>
+
+<figure>
+<img src="003_files/image037.png" class="article-img">
+
+<figcaption>
+Figure
+8. The Performance Depend on Feature Number.</figcaption>
+</figure>
+
+<p class="body">As it is clear from the
+Figure 8, the dataset was created by using the best 1<sup>st</sup>-50<sup>th</sup>
+feature obtained from 5 VL depends on the accuracies obtained with datasets.
+The accuracies of using a larger dataset did not increase and therefore the
+dataset was consisted of the 50 features that have the highest feature rank for
+decreasing computational cost without reducing accuracy. Further studies were
+done with this dataset. </p>
+
+<p class="subhead">4.3. Optimization of
+Machine Learning Methods</p>
+
+<p class="body">The <b>kNN </b>method was
+optimized by determining the best suitable number of nearest neighbours (k). The
+classification accuracies obtained by kNN while employed with different k
+numbers is shown in Figure 9.</p>
+
+<p class="body">The best suitable number
+of nearest neighbour is 1 for this dataset as it is clear in Figure 9. The
+butterfly is in the same species of its nearest neighbour and the accuracy of
+butterfly identification by kNN is decreased when the number of nearest
+neighbour is increased.</p>
+
+<figure>
+<img src="003_files/image038.png" class="article-img">
+
+<figcaption>
+Figure
+9. Accuracies obtained by kNN depend on k.</figcaption>
+</figure>
+
+<p class="body">In this study, <b>SVM</b>
+optimization was done by choosing the best suitable kernel with kernel
+parameter. The accuracies obtained classification accuracies are sorted in
+Figure 10. </p>
+
+<figure>
+<img src="003_files/image039.png" class="article-img">
+
+<figcaption>
+Figure 10. SVM Optimization.</figcaption>
+</figure>
+
+<p class="body">The best suitable kernel
+and parameter are; polynomial and 1, respectively as it can be observed from
+the Figure 10. The accuracy of using a polynomial kernel is stable. </p>
+
+<p class="body">In <b>ELM</b>, number of
+neurons and the transfer function is determined by the accuracies obtained and
+they are illustrated in Figure 11. </p>
+
+<p class="body">The highest accuracy is
+obtained while employing SLFN, which has 60 Neurons in the hidden layer with
+tangent sigmoid transfer function depending on Figure 11. The accuracies of
+employing sigmoid, hard limit, triangular basis and tangent sigmoid transfer
+functions are nearly same while the SLFN has more than 50 neurons in the hidden
+layer.</p>
+
+<figure>
+<img src="003_files/image040.png" class="article-img">
+
+<figcaption>
+Figure 11. ELM Optimization.</figcaption>
+</figure>
+
+<p class="subhead">4.4. Results of
+Classification</p>
+
+<p class="body">The obtained accuracies by
+classifying the selected features from the butterfly dataset with optimized
+kNN, SVM and ELM methods are sorted in table 4.</p>
+
+<center>
+<div class="widetable">
+<p class="body">Table 4. The
+Error Depend on TEM Filter Vector Length.</p>
+<table>
+<thead>
+ <tr>
+  <td><b>Method</b>
+  </td>
+  <td><b>Accuracy (%)</b>
+  </td>
+  <td><b>STD</b>
+  </td>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td>kNN
+  </td>
+  <td>99.26
+  </td>
+  <td>5.93E-5
+  </td>
+ </tr>
+ <tr>
+  <td>SVM
+  </td>
+  <td>98.16
+  </td>
+  <td>6.98E-5
+  </td>
+ </tr>
+ <tr>
+  <td>ELM
+  </td>
+  <td>99.47
+  </td>
+  <td>3.86E-5
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+</center>
+
+<p class="body">The accuracy results
+obtained in this study are higher than the previous studies. It was 97%, 96.3%,
+92.85%, 98.25% and 96.45% by employing GF+ELM [3], GLCM+MLR [4], GLCM+ANN [5],
+GLCM+ELM [6] and LBP+ELM [6], classification accuracies respectively. The
+classification accuracy obtained from ELM is slightly higher than the results
+obtained from kNN and was higher than SVM, which was suited to the results in
+[3, 6]. As a summary, the classification results were showing that the
+acceptable performance of TEM feature extracted butterfly identification method
+was not depended on machine learning methods. On the other hand, the
+performance of GLCM was depended on the employed machine learning method as
+seen the results of [4, 5, 6]. Therefore, the high performance can be seen as a
+result of using the TEM feature extraction method which suits the results of
+Pietikainen et al. [15, 16] study that compared Laws, co-occurrence contrast,
+and edge per unit area operators on Brodatz and geological terrain types and
+TEM performed better than other operators.</p>
+
+<p class="body">The authors strongly
+suggest that employing image processing methods are a better approach than
+using conventional diagnostic methods
+for identification. Since employing machine learning methods requires less
+effort and attention than time consuming and attention-seeking conventional diagnostic methods [6]. Additionally,
+image processing methods are cheaper than them. A huge image databases can be
+used for identification of each animal or plant, which may help the human
+development of caring them or learning a new approach from them. On the other
+hand, all images must be shot with an acceptable resolution; as Rachidi et al.
+demonstrated there is a strong relationship between image resolution and Laws’
+masks texture parameters, such as when the pixel size was increased, the
+information contained in the images may be lost [13]. Therefore the images in
+the database must be in meaningful resolution. </p>
+
+<h4>5. Conclusion</h4>
+
+<p class="body">The aim of the study is to
+identify butterfly species from their images instead of very complex, time
+consuming and expensive classical methods. For this reason TEM method, a
+texture analysis method was used for feature extraction. The main advantage of
+using TEM is; the TEM filters can detect edges, levels, waves, spots and
+ripples at chosen vector length neighbouring pixels in both horizontal and
+vertical direction. Since each butterfly species has a different colour or
+shapes, the TEM feature extraction method shows high performance of
+classification such as 99.26%, 98.16% and 99.47% by using kNN, SVM and ELM,
+respectively. Therefore, the results of this study were showed that the
+butterfly identification can be easily done by proposed machine vision method
+and the high performance of identification was not depending on the used
+machine learning algorithm, which was depend on used feature extraction method.
+These results show that the textures of butterflies may make an important
+contribution to the identification of butterfly species.  </p>
+
+<h4 id="references">References</h4>
+<div class="ref">
+<p class="body">[1] L. Kayci, “Erek
+  Da&#287;&#305; (Van) Papilionoidea ve Hesperioidea Ekolojisi ve Faunas&#305;
+  Üzerine Ara&#351;t&#305;rmalar (Lepidoptera),” <i>Priamus Suppl.</i>, vol. 6,
+  pp. 1-47, 2007.</p>
+  
+<p class="body">[2] P. Herbert and R.
+  Gregory, “The Promise of DNA Barcoding for Taxonomy,” <i>Syst. Biology</i>,
+  vol. 54, no. 5, pp. 852-859, Jul. 2005. <a href="http://dx.doi.org/10.1080/10635150500354886" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[3] L. Kayci, Y. Kaya and T.
+  Ramazan, “A Computer Vision System for the Automatic Identification of
+  Butterfly Species via Gabor-Filter-Based Texture Features and Extreme
+  Learning Machine: GF+ELM,” <i>TEM J.</i>, vol. 2, no. 1, pp.13-20, Nov. 2013. <a href="http://www.temjournal.com/documents/vol2no1/pdf/A%20computer%20vision%20system%20for%20the%20automatic%20identification%20of%20butterfly%20species%20via%20Gabor-filter-based%20texture%20features%20and%20extreme%20learning%20machine%20GF+ELM.pdf" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[4] L. Kayci and Y. Kaya, “A
+  Vision System for Automatic Identification of Butterfly Species Using a
+  Grey-Level Co-Occurrence Matrix and Multinomial Logistic Regression,” <i>Zoology
+  in the Middle East</i>, vol. 60, no. 1, pp. 57-64, Feb. 2014. <a href="http://dx.doi.org/10.1080/09397140.2014.892340" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[5] Y. Kaya and L. Kayci,
+  “Application of Artificial Neural Network for Automatic Detection of Butterfly
+  Species Using Color and Texture Features,” <i>Visual Comput.</i>, vol. 30,
+  no. 1, pp. 71-79, Jan. 2014. <a href="http://dx.doi.org/10.1007/s00371-013-0782-8" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[6] Y. Kaya, L. Kayc&#305;,
+  R. Tekin, and Ö.F. Ertu&#287;rul, “Evaluation of Texture Features for
+  Automatic Detecting Butterfly Species Using Extreme Learning Machine,” <i>J.
+  of Experimental &amp; Theoretical Artificial Intell.</i>, vol. 26, no. 2, pp.
+  267-281, Jan. 2014. <a href="http://dx.doi.org/ 10.1080/0952813X.2013.861875" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[7] B.B. Chaudhuri and N.
+  Sarkar, “Texture Segmentation  Using  Fractal Dimension,” <i>IEEE Trans. on
+  Pattern Anal. and Mach. Intell.</i>, vol. 17, no. 1, pp.72-77, Jan. 1995. <a href="http://dx.doi.org/10.1109/34.368149" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[8] P. Maillard, “Comparing
+  Texture Analysis Methods through Classification,” <i>Photogrammetric
+  Eng. &amp; Remote Sensing</i>, vol. 69, no. 4, pp. 357–367, Apr. 2003. <a href="http://dx.doi.org/10.14358/PERS.69.4.357" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[9] J. Malik, S. Belongie,
+  T. Leung and J. Shi, “Contour and Texture Analysis for Image Segmentation,” <i>Int.
+  J. of Comput. Vision,</i> vol. 43, no. 1, pp. 7–27, Jun. 2001. <a href="http://dx.doi.org/10.1023/A:1011174803800" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[10] R. M. Haralick, K. Shanmugam
+  and J. Dinstein, “Textural Features for Image Classification,” <i>IEEE Trans.
+  Syst. Man Cybern.</i>, vol. 3, no. 6, pp. 610–621, Nov. 1973.  <a href="http://dx.doi.org/10.1109/TSMC.1973.4309314" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[11] T. Ojala, M. Pietikäinen
+  and T. Mäenpää, “Multiresolution Gray-Scale and Rotation Invariant Texture
+  Classification with Local Binary Patterns,”  <i>IEEE Trans. on Pattern Anal.
+  Mac. Intell.</i>, vol. 24, no. 7, pp. 971 – 987, Jul. 2002. <a href="http://dx.doi.org/10.1109/TPAMI.2002.1017623" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[12] K. Laws, “Textured Image
+  Segmentation,” Ph.D. dissertation, University of Southern California, LA, 1980. <a href="http://oai.dtic.mil/oai/oai?verb=getRecord&metadataPrefix=html&identifier=ADA083283" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[13] M. Rachidi, C. Chappard,
+  A. Marchadier, C. Gadois, E. Lespessailles and C.L. Benhamou,  “Application
+  of Laws’ Masks to Bone Texture Analysis: An Innovative Image Analysis Tool in
+  Osteoporosis,” <i>ISBI 2008</i>, IEEE, pp.1191-1194, May 2008. <a href="http://dx.doi.org/10.1109/ISBI.2008.4541215" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[14] D-C Lee and T. Schenk,
+  &quot;Image Segmentation from Texture Measurement,&quot; <i>Int. Archives of
+  Photogrammetry and Remote Sensing</i>, vol. 29, pp. 195-195, 1993. <a href="http://www.isprs.org/proceedings/XXIX/congress/part3/195_XXIX-part3.pdf" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[15] M. Pietikaeinen, A.
+  Rosenfeld, and L. S. Davis, “Texture Classification Using Averages of Local
+  Pattern Matches,” in <i>Comput. Sci. Center, </i>University of Maryland,<i> </i>1981. <a href="http://www.researchgate.net/publication/235057642_Texture_Classification_Using_Averages_of_Local_Pattern_Matches" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[16] M. Pietikainen, A. Rosenfeld,
+  and L. S. Davis, &quot;Experiments with Texture Classification Using Averages
+  of Local Pattern Matches,&quot; <i>Systems, Man and Cybernetics</i>, vol. 13,
+  no. 3, pp. 421-426, Jun. 1983. <a href="http://dx.doi.org/10.1109/TSMC.1983.6313175" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[17] C-M Wu, Y-C Chen and K-S
+  Hsieh, “Texture Features for Classification of Ultrasonic Liver Images,” <i>IEEE
+  Trans. on Medical Imaging</i>, vol.  11, no.  2, pp. 141-152, Jun. 1992. <a href="http://dx.doi.org/10.1109/42.141636" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[18] C. I. Christodoulou, C.
+  S. Pattichis, M. Pantziaris and A. Nicolaides , “Texture-Based Classification
+  of Atherosclerotic Carotid Plaques,” <i>IEEE Trans. on Medical Imaging</i>,
+  vol. 22, no. 7, pp. 902-912, Jul. 2003. <a href="http://dx.doi.org/10.1109/TMI.2003.815066" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[19] F. Carbonell,
+  “Contribution a la Connaissance du Genre Agrodiaetus Hübner (1822), Position
+  Taxinomique d'Agrodiaetus Anticarmon Koçak, 1983 (Lepidoptera, Lycaenidae),” <i>Linneana
+  Belgica</i>, vol. 16, no. 7, pp. 263-265, 1998.</p>
+  
+<p class="body">[20] P. Skala,
+  “New Taxa of the Genus Hyponephele MUSCHAMP, 1915 from Iran and Turkey
+  (Lepidoptera, Nymphalidae),” <i>Linneana Belgica</i>, vol. 19, no. 1, pp. 41-50,
+  2003.</p>
+  
+<p class="body">[21] G. Hesselbarth, H. V. Oorschot,
+  and S. Wagener, “Die Tagfalter der Türkei,” <i>Bochum</i>, 1993.</p>
+  
+<p class="body">[22] T. Tolman, “<i>Butterflies
+  of Britain and Europe</i>,” London: Harper Collins Publishers, 1997, pp. 320. <a href="http://books.google.ca/books/about/Butterflies_of_Britain_and_Europe.html?id=PVlFAQAAIAAJ&redir_esc=y" target="_blank" class="body-link">View Book</a></p>
+  
+<p class="body">[23] G. Lemaitre and M.
+  Rodojevic “Texture Segmentation: Co-occurrence Matrix and Laws’ Texture Masks
+  Methods,” pp. 1-34. <a href="http://g.lemaitre58.free.fr/pdf/vibot/scene_segmentation_interpretation/cooccurencelaw.pdf" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[24] R. Tamura, S. Mori, and
+  T. Yamawaki, “Textural Features Corresponding to Visual Perception,” <i>IEEE
+  Trans. SMC</i>, vol. 8, no. 1, pp. 460-473, Jun. 1978. <a href="http://dx.doi.org/10.1109/TSMC.1978.4309999" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[25] “kn-Nearest Neighbor
+  Classification,” <i>IEEE  Trans.  on Inform.  Theory</i>, vol. 18, no. 5, pp.
+  627-630, Sep. 1972.</p>
+  
+<p class="body">[26] J. Park, “<i>Uncertainty
+  and Sensitivity Analysis in Support Vector Machines: Robust Optimization and
+  Uncertain Programming Approaches</i>,” University Of Oklahoma, 2006. <a href="http://dl.acm.org/citation.cfm?id=1195531" target="_blank" class="body-link">View Book</a></p>
+  
+<p class="body">[27] V. Kecman, “<i>Learning
+  and Soft Computing: Support Vector Machines, Neural Networks, and Fuzzy Logic
+  Models</i>,” Cambridge: MIT Press, 2001. <a href="http://books.google.ca/books?hl=en&lr=&id=W5SAhUqBVYoC&oi=fnd&pg=PR11&dq=Learning+++and+Soft+Computing:+Support+Vector+Machines,+Neural+Networks,+and+Fuzzy+Logic+++Models&ots=etZ2MpktU0&sig=S3KxlPdlOBlX8KXvi7ZAYKpNz6s#v=onepage&q=Learning%20%20%20and%20Soft%20Computing%3A%20Support%20Vector%20Machines%2C%20Neural%20Networks%2C%20and%20Fuzzy%20Logic%20%20%20Models&f=false" target="_blank" class="body-link">View Book</a></p>
+  
+<p class="body">[28] C. Cortes and V. Vapnik,
+  “Support-vector Networks,” <i>Mach. Learning</i>, vol. 20, no. 3, pp. 273-297,
+  1995. <a href="http://dx.doi.org/10.1007/BF00994018" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[29] B. Kepenekçi and G.B. Akar,
+  “Face Classification with Support Vector Machine,” in <i>IEEE 12th Signal
+  Process. and Commun. Appl. Conf.</i>, pp. 583-586, 2004. <a href="http://dx.doi.org/10.1109/AFGR.2000.840634" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[30] T. Joachims, “<i>Learning
+  to Classify Text Using Support Vector Machines: Methods, Theory and
+  Algorithms</i>,” London: Kluwer Academic Publishers, 2002. <a href="http://dx.doi.org/10.1162/089120103322753374" target="_blank" class="body-link">View Book</a></p>
+  
+<p class="body">[31] S. Suresh, S. Saraswathi,
+  and N. Sundararajan, “Performance Enhancement of Extreme Learning Machine for
+  Multi-category Sparse Data Classification Problems,” <i>Eng. Appl. of
+  Artificial Intell.</i>, vol. 23, no. 7, pp. 1149-1157, Oct. 2010. <a href="http://dx.doi.org/10.1016/j.engappai.2010.06.009" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[32] R. Hai-Jun, O. Yew-Soon,
+  T. Ah-Hwee, and Z. Zhu, “A Fast Pruned-extreme Learning Machine for Classification
+  Problem,” <i>Neurocomputing</i>, vol. 72, no. 1-3, pp. 359-366, Dec. 2008. <a href="http://dx.doi.org/10.1016/j.neucom.2008.01.005" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[33] G.B. Huang, Q.Y. Zhu,
+  and C.K. Siew, “Extreme Learning Machine: Theory and Applications,” <i>Neurocomputing</i>,
+  vol. 70, no. 1-3, pp. 489-501, Dec. 2006. <a href="http://dx.doi.org/10.1016/j.neucom.2005.12.126" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[34] Q. Yuan, Z. Weidong, L. Shufang,
+  and C. Dongmei, “Epileptic EEG Classification Based on Extreme Learning Machine
+  and Nonlinear Features,” <i>Epilepsy Res</i>., vol. 96, no. 1-2, pp. 29-36, Sep.
+  2011. <a href="http://dx.doi.org/10.1016/j.eplepsyres.2011.04.013" target="_blank" class="body-link">View Article</a></p>
+
+<p class="body">[35] S. D. Handoko, K. C. Keong,
+  Y. S. Ong, G.L. Zhang, and V. Brusic, “Extreme Learning Machine for Predicting
+  HLA-peptide Binding,” <i>Lecture Notes in Comput. Sci.</i>, vol. 3973, pp.
+  716–721, 2006. <a href="http://dx.doi.org/10.1007/11760191_105" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[36] W. Zong and G. B. Huang,
+  “Face Recognition Based on Extreme Learning Machine,” <i>Neurocomputing</i>, vol.
+  74, no. 16, pp. 2541–2551, Sep. 2011. <a href="http://dx.doi.org/10.1016/j.neucom.2010.12.041" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[37] I. Guyon and A.
+  Elisseeff, “An Introduction to Variable and Feature Selection,” <i>J. of Mach.
+  Learning Res.</i>, vol. 3, pp. 1157-1182, Jan. 2003. <a href="http://dl.acm.org/citation.cfm?id=944968" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[38] M. Dash and H. Liu,
+  “Feature Selection for Classification,” <i>Intell. Data Anal.,</i> vol.
+  1, no. 3, pp. 131–156, 1997. <a href="http://dx.doi.org/10.3233/IDA-1997-1302" target="_blank" class="body-link">View Article</a></p>
+  
+<p class="body">[39] H. Witten and E. Frank, “<i>Data
+  Mining: Practical Machine Learning Tools and Techniques</i>,” 2nd Edition, San
+  Francisco, Morgan Kaufmann, pp. 420-3, 2005. <a href="http://books.google.ca/books?hl=en&lr=&id=QTnOcZJzlUoC&oi=fnd&pg=PR17&dq=Data+++Mining:+Practical+Machine+Learning+Tools+and+Techniques&ots=3hixcnXlPb&sig=9SnPifmwI6FDFwAthJFXgo6xNvk#v=onepage&q=Data%20%20%20Mining%3A%20Practical%20Machine%20Learning%20Tools%20and%20Techniques&f=false" target="_blank" class="body-link">View Book</a></p>
+</div> <!-- REF -->
+
+  </div> <!-- INDENT -->
+  </div> <!-- Main Content -->
+</div>
+</div>
+
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
+  </div>
+
+</div>
+</footer>
+</div>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+</body>
+</html>
