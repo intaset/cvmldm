@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /cvmldm
+exclude: ['README.md',]
