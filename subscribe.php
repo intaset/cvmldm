@@ -18,7 +18,7 @@ $jName = strtoupper(array_shift(explode(".",$_SERVER['HTTP_HOST'])));
  $emailcheck = mysql_query("SELECT email FROM users WHERE email = '$emailcheck' AND jName ='$jName'") or die(mysql_error());
 
  $emailcheck2 = mysql_num_rows($emailcheck);
-		
+    
 if ($emailcheck2 != 0) {
 ?>
 
@@ -29,7 +29,7 @@ if ($emailcheck2 != 0) {
 <meta name="robots" content="noarchive">
 <meta name="description" content="{{page.meta}}">
 <meta name="keywords" content="{{page.keyword}}">
-<title>ARE - Subscribe</title>
+<title>CVMLDM - Subscribe</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
@@ -131,14 +131,14 @@ if ($emailcheck2 != 0) {
 
   <div class="j-header">
   <div class="name">
-    <h1>Advances in Renewable Energy (ARE)</h1>
+    <h1>International Journal on Computer Vision, Machine Learning, and Data Mining (CVMLDM)</h1>
     <!-- <p class="body">ISSN:</p> -->
     <a href="/openaccess" target="blank" title="Avestia's Open Access">
           <img src="img/j-oa.png" border="0" onmouseover="this.src='img/j-oa-hover.png'" onmouseout="this.src='img/j-oa.png'" class="j-oa">
     </a>
   </div>
 
-    <img src="img/journals/j-are.jpg" class="j-img">
+    <img src="img/journals/j-cvmldm.jpg" class="j-img">
 </div>
 
   <div role="navigation" class="navbar navbar-default">
@@ -152,7 +152,6 @@ if ($emailcheck2 != 0) {
   </ul>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li><a href="/volume1">Volume 1</a></li>
       <li><a href="/current">Current Volume</a></li>
     </ul>
   </div><!--/.nav-collapse -->
@@ -264,7 +263,6 @@ if ($emailcheck2 != 0) {
 <script src="js/jquery.easing.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
 <script defer src="js/demo.js"></script>
-<script defer src="js/jquery.flexslider.js"></script>
 <script type="text/javascript" src="css/animate.min.css"></script>
 <script type="text/javascript" src="js/jnav.js"></script>
 
@@ -281,21 +279,6 @@ var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
 //-->
 </script>
 
-<script type="text/javascript">
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: false,
-easing: "swing",               
-animationLoop: true,
-smoothHeight: false,  
-slideshow: false,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
 
     <script type="text/javascript">
 /*
@@ -335,39 +318,39 @@ slideshow: false,
 
 <?php
 
- 		die();
+    die();
 
 
- 				}
+        }
 $timestamp = date('Y-m-d h:i:s');
 $uniqueID = uniqid();
 $confirmed = 0;
 
  // now we insert it into the database
 
- 	$insert  = "INSERT INTO users (email, jName, uniqueID, timestamp, confirmed) VALUES ('".$_POST['email']."', '".$jName."', '".$uniqueID."', '".$timestamp."', '".$confirmed."')";
+  $insert  = "INSERT INTO users (email, jName, uniqueID, timestamp, confirmed) VALUES ('".$_POST['email']."', '".$jName."', '".$uniqueID."', '".$timestamp."', '".$confirmed."')";
 
- 	$add_member = mysql_query($insert);
+  $add_member = mysql_query($insert);
 
- 	$email = $_REQUEST['email'];
-		
-	//Email out the infromation
-	$subject = "Advances in Renewable Energy"; 
-	$message = "Thank you for signing up to receive alerts for ARE - Advances in Renewable Energy.
+  $email = $_REQUEST['email'];
+    
+  //Email out the infromation
+  $subject = "International Journal on Computer Vision, Machine Learning and Data Mining"; 
+  $message = "Thank you for signing up to receive alerts for CVMLDM - International Journal on Computer Vision, Machine Learning and Data Mining.
  
  In order to confirm your subscription, please visit the link below:
-	http://$jName.avestia.com/subscribe/?ID=$uniqueID
-	
+  http://$jName.avestia.com/subscribe/?ID=$uniqueID
+  
 If you wish to unsubscribe at any time, please visit:
-	http://$jName.avestia.com/unsubscribe/?ID=$uniqueID
+  http://$jName.avestia.com/unsubscribe/?ID=$uniqueID
 
 Sincerely Yours,
 Avestia Publishing
 http://avestia.com"; 
-						   
+               
 mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
  
- 	?>
+  ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -376,7 +359,7 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
 <meta name="robots" content="noarchive">
 <meta name="description" content="{{page.meta}}">
 <meta name="keywords" content="{{page.keyword}}">
-<title>ARE - Subscribe</title>
+<title>CVMLDM - Subscribe</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
@@ -478,14 +461,14 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
 
   <div class="j-header">
   <div class="name">
-    <h1>Advances in Renewable Energy (ARE)</h1>
+    <h1>International Journal on Computer Vision, Machine Learning, and Data Mining (CVMLDM)</h1>
     <!-- <p class="body">ISSN:</p> -->
     <a href="/openaccess" target="blank" title="Avestia's Open Access">
           <img src="img/j-oa.png" border="0" onmouseover="this.src='img/j-oa-hover.png'" onmouseout="this.src='img/j-oa.png'" class="j-oa">
     </a>
   </div>
 
-    <img src="img/journals/j-are.jpg" class="j-img">
+    <img src="img/journals/j-cvmldm.jpg" class="j-img">
 </div>
 
   <div role="navigation" class="navbar navbar-default">
@@ -499,7 +482,6 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
   </ul>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li><a href="/volume1">Volume 1</a></li>
       <li><a href="/current">Current Volume</a></li>
     </ul>
   </div><!--/.nav-collapse -->
@@ -511,7 +493,7 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
     <h2>Receive Updates</h2>
 
     <p class="body">Confirm Subscription</p>
-    <p class="body">Thank you for subscribing to ARE - Advances in Renewable Energy. A confirmation email has been sent to your email. Please click on the confirmation link available in the email to confirm your subscription.</p>
+    <p class="body">Thank you for subscribing to CVMLDM - International Journal on Computer Vision, Machine Learning, and Data Mining. A confirmation email has been sent to your email. Please click on the confirmation link available in the email to confirm your subscription.</p>
 
     <p class="body">&nbsp;</p>
     <p class="body">&nbsp;</p>
@@ -627,22 +609,6 @@ var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
 var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
 //-->
 </script>
-
-<script type="text/javascript">
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: false,
-easing: "swing",               
-animationLoop: true,
-smoothHeight: false,  
-slideshow: false,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
 
     <script type="text/javascript">
 /*
