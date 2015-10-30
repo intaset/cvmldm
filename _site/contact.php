@@ -189,7 +189,7 @@ mail($my_email,$subject,$message,$headers);
 
     <div class="search-menu">
       <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
 
     <div class="nav2">
@@ -218,7 +218,7 @@ mail($my_email,$subject,$message,$headers);
   </div>
 </div>
       <div class="bg">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+        <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
       </div>
     </div> <!-- Mobile -->
   </header>
